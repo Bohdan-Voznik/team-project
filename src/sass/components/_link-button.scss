@@ -1,0 +1,26 @@
+.link-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 20px;
+  background-color: var(--bg-color);
+  color: var(--accent-color);
+}
+.link-button--icon {
+  width: 40px;
+}
+
+.link-button--text {
+  width: 138px;
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 128;
+}
+
+.link-button__icon {
+  width: 10px;
+  height: 10px;
+  fill: currentColor;
+}
