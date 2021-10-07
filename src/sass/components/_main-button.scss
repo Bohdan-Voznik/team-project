@@ -1,0 +1,21 @@
+.main-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 159px;
+  height: 44px;
+  border-radius: 22px;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  background-color: var(--bg-color);
+  color: var(--accent-color);
+}
+
+.main-button__icon {
+  margin-left: 13px;
+  width: 6px;
+  height: 10px;
+  fill: currentColor;
+}

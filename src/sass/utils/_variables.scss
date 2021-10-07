@@ -1,0 +1,19 @@
+:root {
+  --white-text-color: #ffffff;
+  --back-text-color: #000000;
+  --grey-text-color: #907e82;
+
+  --secondary-title-color: #ffa5ba;
+
+  --bg-color: #ffffff;
+  --secondaru-bg-color: #fff5f6;
+
+  --accent-color: #d41443;
+}
+
+.bg {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  background-color: darkcyan;
+}
