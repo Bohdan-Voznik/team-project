@@ -1,6 +1,5 @@
-.hero-div {
+.hero-bg {
   display: flex;
-  flex-direction: row;
   background-color: var(--third-bg-color);
   background-image: url(../images/hero/icecream-mobile@1x.png),
     url(../images/hero/ellipse-nodesktop@1x.png);
@@ -88,7 +87,6 @@
 }
 .hero-main__list {
   display: flex;
-  flex-direction: row;
 }
 .hero-main__item:not(:last-child) {
   margin-right: 8px;
@@ -205,6 +203,8 @@
   font-size: 8px;
   line-height: 10.42px;
   color: var(--white-text-color);
+  display: flex;
+  flex-direction: column;
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;
