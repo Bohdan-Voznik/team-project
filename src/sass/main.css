@@ -175,8 +175,14 @@ button {
 }
 
 .footer {
-  padding-top: 57px;
+  padding-top: 113px;
   background-color: var(--secondaru-bg-color);
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 158px;
+  }
 }
 
 .footer__wrap {
@@ -216,7 +222,7 @@ button {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .footer__text-pink,
   .footer__text-crimson {
     width: 350px;
@@ -237,7 +243,7 @@ button {
   color: var(--secondary-title-color);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .footer__text-pink {
     font-size: 26px;
     line-height: 1.15;
@@ -247,7 +253,7 @@ button {
 
 @media screen and (min-width: 1200px) {
   .footer__text-pink {
-    font-size: px;
+    font-size: 30px;
     line-height: 1.13;
   }
 }
@@ -259,7 +265,7 @@ button {
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .footer__text-crimson {
     font-size: 48px;
     line-height: 1.14;
@@ -283,20 +289,28 @@ button {
   margin-bottom: 46px;
 }
 
-.footer__social-item {
+.footer__social-item:not(:last-child) {
+  margin-right: 28px;
+}
+
+.footer__social-link {
+  display: block;
   padding: 6px;
   border-radius: 50%;
   background-color: var(--secondary-title-color);
+  -webkit-transition: background-color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) {
-  .footer__social-item {
+@media screen and (min-width: 768px) {
+  .footer__social-link {
     padding: 7px;
   }
 }
 
-.footer__social-item:not(:last-child) {
-  margin-right: 28px;
+.footer__social-link:hover,
+.footer__social-link:focus {
+  background-color: var(--accent-color);
 }
 
 .footer__social-icon {
@@ -311,7 +325,7 @@ button {
   color: var(--back-text-color);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .footer__tel-number {
     font-size: 14px;
   }
@@ -342,7 +356,7 @@ button {
   border-top: 1px solid #e1e1e1;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .footer__copyright {
     padding-top: 29px;
     padding-bottom: 18px;
