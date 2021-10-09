@@ -185,12 +185,14 @@ button {
   line-height: 1.16;
   text-align: center;
   color: var(--secondary-title-color);
+  padding-top: 121px;
 }
 
 @media screen and (min-width: 768px) {
   .product__text {
     font-size: 26px;
     line-height: 1.15;
+    padding-top: 122px;
   }
 }
 
@@ -198,6 +200,7 @@ button {
   .product__text {
     font-size: 30px;
     line-height: 1.13;
+    padding-top: 127px;
   }
 }
 
@@ -209,6 +212,7 @@ button {
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  padding-top: 15px;
   color: var(--accent-color);
 }
 
@@ -248,6 +252,7 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    padding-top: 150px;
   }
 }
 
@@ -259,6 +264,7 @@ button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-top: 259px;
   }
 }
 
@@ -268,6 +274,7 @@ button {
   background: var(--secondary-title-color);
   border-radius: 24px;
   margin-bottom: 16px;
+  margin-top: 144px;
 }
 
 @media screen and (min-width: 768px) {
@@ -275,6 +282,7 @@ button {
     width: 220px;
     height: 485px;
     margin-bottom: 112px;
+    margin-top: 0px;
   }
   .product-list:not(:last-child) {
     margin-right: 20px;
@@ -285,6 +293,7 @@ button {
   .product-list {
     width: 329px;
     height: 525px;
+    margin-top: 0px;
     margin-bottom: 119px;
     -ms-flex-preferred-size: calc(100%/3 - 30px);
         flex-basis: calc(100%/3 - 30px);
