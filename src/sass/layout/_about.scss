@@ -1,0 +1,296 @@
+.section.about {
+    padding-top: 125px;
+    padding-bottom: 20px;
+
+    background: var(--secondaru-bg-color);
+
+    
+
+    @media screen and (min-width:768px) {
+        padding-top: 130px;
+        padding-bottom: 33px;
+    }
+    
+
+    @media screen and (min-width:1280px) {
+        padding-top: 125px;
+        padding-bottom: 20px;
+
+    }
+
+    // Фон для смартфона и десктопа
+    @media screen and (max-width: 767px){
+
+        background: url(/images/about/about_background-milk-mob-min_left-part@1x.png) left,
+        url(/images/about/about_background-milk-mob-min_right-part@1x.png) right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: var(--secondaru-bg-color);
+
+        @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+
+            background: url(/images/about/about_background-milk-mob-min_left-part@2x.png) left,
+            url(/images/about/about_background-milk-mob-min_right-part@2x.png) right;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: var(--secondaru-bg-color);
+        }
+    }    
+
+   
+    @media screen and (min-width: 1280px){
+
+        background: url(/images/about/about_background-milk-desk-min_left-part@1x.png) left,
+         url(/images/about/about_background-milk-desk-min_right-part@1x.png) right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: var(--secondaru-bg-color);
+
+        @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+
+           background: url(/images/about/about_background-milk-desk-min_left-part@2x.png) left,
+           url(/images/about/about_background-milk-desk-min_right-part@2x.png) right;
+           background-repeat: no-repeat;
+           background-size: contain;
+           background-color: var(--secondaru-bg-color);
+
+
+        }
+
+
+    }
+
+}
+
+.about__pre-title {
+    font-family: 'Titan One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.16;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--secondary-title-color);
+
+    @media screen and (min-width:768px) {
+        font-size: 26px;
+        line-height: 1.15;
+    }
+
+    @media screen and (min-width:1200px) {
+        font-size: 30px;
+        line-height: 1.13;
+        letter-spacing: 0.04em;
+    }
+
+}
+
+.about__title {
+    font-family: 'Titan One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    margin: 15px auto 0;
+
+    @media screen and (max-width:767px) {
+        max-width: 200px;
+    }
+
+    @media screen and (min-width:768px) {
+        font-size: 48px;
+        line-height: 1.14;
+        margin: 16px auto 0;
+        margin-top: 16px;
+    }
+
+    @media screen and (min-width:1280px) {
+        margin: 15px auto 0;
+        font-size: 58px;
+        line-height: 1.13;
+        letter-spacing: 0.06em;
+    }
+
+}
+
+.about__content {
+
+    @media screen and (max-width:767px) {
+        margin-top: 26px;
+        max-width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    @media screen and (min-width:1280px) {
+        margin-top: 55px;
+    }
+}
+
+.about__picture {
+   
+
+    @media screen and (min-width:768px) {
+        margin-right: 17px;
+        max-width: 340px;
+    }
+
+    @media screen and (min-width:1280px) {
+        margin-right: 74px;
+        max-width: 516px;
+    }
+}
+
+.about__text {
+
+    margin-top: 46px;
+
+    @media screen and (min-width:768px) and (max-width:1279px) {
+        width: 340px;
+    }
+
+    @media screen and (min-width:1280px) {
+        margin-top: 51px;
+        width: 463px;
+    }
+}
+
+.about__main-text {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+
+    color: var(--back-text-color);
+
+    @media screen and (max-width:479px) {
+        margin-top: 46px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 220px;
+    }
+
+    @media screen and (min-width:480px) and (max-width:767px) {
+        max-width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width:768px) {
+        width: 340px;
+        font-size: 14px;
+        line-height: 1.76;
+    }
+
+    @media screen and (min-width:1280px) {
+        width: 463px;
+        font-size: 16px;
+        line-height: 1.76;
+        letter-spacing: 0.04em;
+    }
+
+}
+
+.about__secondary-text {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+    letter-spacing: 0.04em;
+
+    color: var(--grey-text-color);
+
+    @media screen and (max-width:479px) {
+        margin-top: 47px;
+        max-width: 220px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width:480px) and (max-width:767px) {
+        max-width: 380px;
+        margin: 49px auto 0px;
+    }
+
+    @media screen and (min-width:768px) {
+        margin-top: 49px;
+        font-size: 14px;
+        line-height: 1.76;
+    }
+
+    @media screen and (min-width:1280px) {
+        margin-top: 49px;
+
+        letter-spacing: 0.04em;
+        color: var(--grey-text-color);
+    }
+
+}
+
+.about__button {
+    margin-top: 50px;
+
+    padding-left: 37px;
+
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.28;
+    display: flex;
+    align-items: center;
+    border: none;
+
+
+
+
+    color: var(--accent-color);
+    background: #ffffff;
+    border-radius: 22px;
+
+    width: 176px;
+    height: 44px;
+
+    &:hover,
+    &:focus {
+        background-color: #ECEBEB;
+    }
+
+
+    @media screen and (max-width: 480px) {
+        margin-left: 30px;
+    }
+
+    @media screen and (min-width:768px) {
+        margin-top: 62px;
+        font-size: 16px;
+        line-height: 1.31;
+    }
+
+    @media screen and (min-width:1280px) {
+        margin-top: 45px;
+    }
+}
+
+.about__button-icon {
+  margin-left: 14px;
+}
