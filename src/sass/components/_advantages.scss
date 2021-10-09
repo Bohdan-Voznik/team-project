@@ -52,7 +52,7 @@
   font-weight: bold;
   font-size: 12px;
   line-height: 1.7;
-  color: #000000;
+  color: var(--back-text-color);
   @media (min-width: 786px) {
     font-size: 14px;
     line-height: 1.74;
