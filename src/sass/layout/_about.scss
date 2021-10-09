@@ -1,5 +1,5 @@
 .about {
-    background: var(--secondaru-bg-color);
+    background: var(--secondary-bg-color);
 
     // Фон для смартфона и десктопа
     @media screen and (max-width: 767px){
@@ -8,7 +8,7 @@
         url(/images/about/about_background-milk-mob-min_right-part@1x.png) right;
         background-repeat: no-repeat;
         background-size: contain;
-        background-color: var(--secondaru-bg-color);
+        background-color: var(--secondary-bg-color);
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -18,7 +18,7 @@
             url(/images/about/about_background-milk-mob-min_right-part@2x.png) right;
             background-repeat: no-repeat;
             background-size: contain;
-            background-color: var(--secondaru-bg-color);
+            background-color: var(--secondary-bg-color);
         }
     }    
 
@@ -29,7 +29,7 @@
          url(/images/about/about_background-milk-desk-min_right-part@1x.png) right;
         background-repeat: no-repeat;
         background-size: contain;
-        background-color: var(--secondaru-bg-color);
+        background-color: var(--secondary-bg-color);
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -39,7 +39,7 @@
            url(/images/about/about_background-milk-desk-min_right-part@2x.png) right;
            background-repeat: no-repeat;
            background-size: contain;
-           background-color: var(--secondaru-bg-color);
+           background-color: var(--secondary-bg-color);
 
         }
 
