@@ -1,90 +1,3 @@
-.contacts__set {
-  background-color: var(--secondaru-bg-color);
-  padding: 86px 50px 20px 50px;
-}
-.contacts-cart {
-  display: flex;
-  flex-direction: column;
-  min-width: 220px;
-  padding: 43px 20px;
-  margin: auto;
-  margin-bottom: 20px;
-  border-radius: 30px;
-  border-color: #e1e1e1;
-  background-color: var(--bg-color);
-}
-.contacts-cart--ident {
-  display: flex;
-  flex-direction: column;
-  min-width: 220px;
-  padding: 43px 20px;
-  margin: auto;
-  margin-bottom: 54px;
-  border-radius: 30px;
-  border-color: #e1e1e1;
-  background-color: var(--bg-color);
-}
-.contacts-cart__header__category {
-  display: flex;
-  max-width: 80px;
-  max-height: 16;
-  margin-bottom: 25px;
-  align-items: center;
-  justify-content: center;
-
-  font-family: DM Sans;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 12px;
-  line-height: 1.83;
-  text-align: center;
-  letter-spacing: 0.04em;
-
-  color: var(--white-text-color);
-  border-radius: 4px;
-  background-color: #f0d1a5;
-}
-.contacts-cart__header__category--color {
-  display: flex;
-  max-width: 130px;
-  max-height: 16;
-  margin-bottom: 25px;
-  align-items: center;
-  justify-content: center;
-
-  font-family: DM Sans;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 12px;
-  line-height: 1.83;
-  text-align: center;
-  letter-spacing: 0.04em;
-
-  color: var(--white-text-color);
-  border-radius: 4px;
-  background-color: #c2e297;
-}
-.contacts-cart__header__title {
-  margin-bottom: 10px;
-  font-family: DM Sans;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 12px;
-  line-height: 1.83;
-  letter-spacing: 0.04em;
-  color: var(--back-text-color);
-}
-.contacts-cart__header__text {
-  font-family: DM Sans;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 12px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  margin-bottom: 25px;
-  color: var(--grey-text-color);
-}
-
 .current {
   &::after {
     content: '';
@@ -97,45 +10,78 @@
     margin-bottom: 25px;
   }
 }
-.contacts-cart__timing__days {
-  font-family: DM Sans;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 12px;
-  line-height: 1.83;
-  letter-spacing: 0.04em;
+.contacts-set {
+  background-image: linear-gradient(
+    to bottom,
+    var(--bg-color) 10%,
+    var(--secondaru-bg-color) 10%,
+    var(--secondaru-bg-color) 87%
+  );
+
+  padding: 86px 50px 20px 50px;
+}
+.contacts-cart {
+  display: flex;
+  flex-direction: column;
+  @media screen and(min-width:320px) and (max-width: 480px) {
+    max-width: 220px;
+    max-height: 427px;
+  }
+  padding: 43px 20px;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  border: 1px Solid#E1E1E1;
+  background-color: var(--bg-color);
+}
+.contacts-set__contacts-cart {
+  margin-bottom: 54px;
+}
+
+.contacts-cart__category {
+  display: flex;
+  max-width: 80px;
+  max-height: 16px;
+  margin-bottom: 25px;
+  @include text(center);
+  color: var(--white-text-color);
+  border-radius: 4px;
+  background-color: #f0d1a5;
+}
+.contacts-cart__category--color {
+  max-width: 130px;
+  max-height: 16px;
+  background-color: #c2e297;
+}
+.contacts-cart__title {
+  margin-bottom: 10px;
+  @include text();
   color: var(--back-text-color);
 }
-.contacts-cart__timing__time {
-  font-family: DM Sans;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 12px;
-  line-height: 1.83;
-  letter-spacing: 0.04em;
+.contacts-cart__text {
+  @include text($line-height: 1.5);
+
+  margin-bottom: 25px;
+  color: var(--grey-text-color);
+}
+
+.contacts-cart__days {
+  @include text();
+  color: var(--back-text-color);
+}
+.contacts-cart__time {
+  @include text();
   color: var(--secondary-title-color);
   margin-bottom: 25px;
 }
-.contacts-cart__timing__time--ident {
-  margin-bottom: 25px;
-}
-.contacts-cart__Locations__tel {
-  font-family: DM Sans;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 12px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
+
+.contacts-cart__tel {
+  @include text($line-height: 1.5);
   text-decoration: none;
   color: var(--grey-text-color);
 }
-.contacts-cart__Locations__mail {
-  font-family: DM Sans;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 12px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
+.contacts-cart__mail {
+  @include text($line-height: 1.5);
   text-decoration: none;
   color: var(--grey-text-color);
 }
@@ -145,6 +91,6 @@
   color: var(--white-text-color);
   background-color: var(--accent-color);
 }
-.main-button--ident {
+.contacts-set__main-button {
   margin: auto;
 }
