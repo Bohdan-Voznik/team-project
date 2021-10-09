@@ -491,7 +491,7 @@ button {
   padding-top: 10px;
   padding-left: 10px;
   border-radius: 4px;
-  transition: 300ms cubic-bezier(0, 0.55, 1, 0.53);
+  transition: box-shadow 300ms cubic-bezier(0, 0.55, 1, 0.53);
 }
 
 .advantages-list__item:hover, .advantages-list__item:focus {
