@@ -166,7 +166,7 @@ button {
   padding-bottom: 45px;
 }
 
-@media (min-width: 787px) {
+@media (min-width: 768px) {
   .advantages-list {
     padding-top: 33px;
     padding-bottom: 70px;
@@ -182,7 +182,7 @@ button {
   }
 }
 
-@media (max-width: 787px) {
+@media (max-width: 767px) {
   .advantages-list__item:not(:last-child) {
     margin-bottom: 38px;
   }
