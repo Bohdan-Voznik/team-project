@@ -11,6 +11,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
+  @media (min-width: 1200px) {
+    padding-top: 20px;
+  }
 }
 
 .advantages-list__item {

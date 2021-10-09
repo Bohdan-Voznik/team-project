@@ -176,6 +176,12 @@ button {
   }
 }
 
+@media (min-width: 1200px) {
+  .advantages-list {
+    padding-top: 20px;
+  }
+}
+
 @media (max-width: 787px) {
   .advantages-list__item:not(:last-child) {
     margin-bottom: 38px;
