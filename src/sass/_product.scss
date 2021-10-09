@@ -50,6 +50,7 @@
         }
     }
 
+    
     .product__cardsed {
         display: flex;
         flex-direction: column;
@@ -115,20 +116,85 @@
         
     }
     .product-list__tittle::after{
-        display: flex;
+        display: block;
         content: "";
         width: 6px;
         height: 6px;
-       background-image: url(../images/sprite.svg/#icon-bracket), 
-       url(../images/sprite.svg/#icon-bracket),
-       url(../images/sprite.svg/#icon-bracket);
 
-     fill: tomato;
-     background-size: contain;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position:  center; 
+    background-color: var(--bg-color);
    
+        background-image: url(../images/sprite.svg/#icon-bracket);
+        background-image: url(../images/sprite.svg/#icon-bracket);
+        background-image: url(../images/sprite.svg/#icon-bracket);
+        
       }
+      
+      .product-list::before{
+        position: top;
+        display: block;
+        content: "";
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position:  center; 
+      }
+        .product-list:nth-child(1)::before{
+            width: 249px;
+            height: 252px;
+        background-image: url(../images/mobice.png);
+       
+        
+        @media screen and (min-width: 768px){
+            width: 220px;
+            height: 233px;
+        background-image: url(../images/tablice.png);
+        }
+        @media screen and (min-width: 1200px){
+            width: 335px;
+            height: 335px;
+            background-image: url(../images/compice.png);
+            }
+        
+      }
+      .product-list:nth-child(2)::before{
+        width: 249px;
+        height: 252px;
+    background-image: url(../images/mobcoffe.png);
+   
+    
+    @media screen and (min-width: 768px){
+        width: 220px;
+        height: 233px;
+    background-image: url(../images/tablcoffe.png);
+    }
+    @media screen and (min-width: 1200px){
+        width: 335px;
+        height: 335px;
+        background-image: url(../images/compcoffe.png);
+        }
+    
+  }
+  .product-list:nth-child(3)::before{
+    width: 249px;
+    height: 252px;
+background-image: url(../images/mobshake.png);
+
+
+@media screen and (min-width: 768px){
+    width: 220px;
+    height: 233px;
+background-image: url(../images/tablshaks.png);
+}
+@media screen and (min-width: 1200px){
+    width: 335px;
+    height: 335px;
+    background-image: url(../images/compshakes.png);
+    }
+
+}
+
 
     .product-list__text{
     
@@ -155,5 +221,5 @@
 
     .product-button{
         display: flex;
-        
+
     }
