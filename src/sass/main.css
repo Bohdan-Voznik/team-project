@@ -256,8 +256,9 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -271,6 +272,8 @@ button {
 
 @media screen and (min-width: 768px) {
   .product-list {
+    width: 220px;
+    height: 485px;
     margin-bottom: 112px;
   }
   .product-list:not(:last-child) {
@@ -280,6 +283,8 @@ button {
 
 @media screen and (min-width: 1200px) {
   .product-list {
+    width: 329px;
+    height: 525px;
     margin-bottom: 119px;
     -ms-flex-preferred-size: calc(100%/3 - 30px);
         flex-basis: calc(100%/3 - 30px);
@@ -320,11 +325,9 @@ button {
   height: 6px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center, right, left;
   background-color: var(--bg-color);
-  background-image: url(../images/sprite.svg/#icon-bracket);
-  background-image: url(../images/sprite.svg/#icon-bracket);
-  background-image: url(../images/sprite.svg/#icon-bracket);
+  background-image: url(../images/sprite.svg/#icon-bracket), url(../images/sprite.svg/#icon-bracket), url(../images/sprite.svg/#icon-bracket);
 }
 
 .product-list::before {
