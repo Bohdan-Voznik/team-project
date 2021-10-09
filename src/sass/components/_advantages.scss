@@ -1,0 +1,61 @@
+.advantages {
+  background-color: var(--secondaru-bg-color);
+}
+.advantages-list {
+  padding-top: 20px;
+  padding-bottom: 45px;
+  @media (min-width: 787px) {
+    padding-top: 33px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.advantages-list__item {
+  &:not(:last-child) {
+    @media (max-width: 787px) {
+      margin-bottom: 38px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+
+  @media (min-width: 1200px) {
+    flex-basis: calc((100% - 30px) / 3);
+  }
+}
+
+.advantages-list__title {
+  font-family: 'Titan One', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #d41443;
+  margin-top: 16px;
+  margin-bottom: 18px;
+}
+
+.advantages-list__description {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #000000;
+  @media (min-width: 786px) {
+    font-size: 14px;
+    line-height: 1.74;
+  }
+  @media (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.76;
+  }
+}
