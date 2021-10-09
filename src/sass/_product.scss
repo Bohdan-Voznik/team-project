@@ -1,62 +1,159 @@
 
-
 .product{
+    
+    background-color: var(--secondaru-bg-color);
+//     @media screen and (min-width: 768px) {
+//         display: flex;
+//         align-self: center;
+//         justify-content: center;
+//       }
+//       @media screen and (min-width: 1200px){
 
+//       }
+// 
 }
 .product__text{
-    font-style: normal;
+    font-family: Titan One;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.16;
     text-align: center;
-    color: #FFA5BA;
+    color: var(--secondary-title-color);
     
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+            line-height: 1.15;
+        }
+        @media screen and (min-width: 1200px){
+            font-size: 30px;
+            line-height: 1.13;
+        }
     }
     
     .product__tittle{
-    font-style: normal;
+    font-family: Titan One;
     font-weight: 400;
     font-size: 34px;
-    line-height: 39px;
+    line-height: 1.4;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     
-    color: #D41443;
+    color:var(--accent-color);
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        line-height: 1.14;
+        }
+        @media screen and (min-width: 1200px){
+            font-size: 58px;
+            line-height: 1.13;
+        }
     }
-    .product__cardsed{
-       
-    }
+
+    .product__cardsed {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+
     
-    .product__list{
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+       
+
+    }
+    @media screen and (min-width: 1200px){
+    display: flex;
+    flex-wrap: wrap;
+    }
+        
+}
+    .product-list{
+        
         width: 280px;
         height: 485px;
-        left: 20px;
-        top: 839px;
-        
-        background: #FFB8CA;
+        background: var(--secondary-title-color);
         border-radius: 24px;
-    }
+         margin-bottom: 16px;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 112px;
+           
+            &:not(:last-child){
+                margin-right: 20px;
+            }
+        }
+        @media screen and (min-width: 1200px){
+            margin-bottom: 119px;
+        flex-basis: calc(100%/3 - 30px);
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+       }
+}
     
-    .product__list-tittle{
-    
+    .product-list__tittle{
+        font-family: Titan One;
     font-weight: 400;
     font-size: 20px;
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
-    
+    color: var(--white-text-color);
+
+    @media screen and (min-width: 768px) {
+       
+        font-size: 28px;
+        line-height: 0.8; 
+
     }
-    .product__list-text{
+    @media screen and (min-width: 1200px){
+        font-size: 30px;
+        line-height: 1.13;
+    }
+        
+    }
+    .product-list__tittle::after{
+        display: flex;
+        content: "";
+        width: 6px;
+        height: 6px;
+       background-image: url(../images/sprite.svg/#icon-bracket), 
+       url(../images/sprite.svg/#icon-bracket),
+       url(../images/sprite.svg/#icon-bracket);
+
+     fill: tomato;
+     background-size: contain;
+    background-repeat: no-repeat;
+    background-position:  center; 
+   
+      }
+
+    .product-list__text{
     
         font-family: DM Sans;
-        font-style: normal;
+      
         font-weight: 700;
         font-size: 14px;
-        line-height: 21;
+        line-height: 1.5;
         text-align: center;
         letter-spacing: 0.04em;
         
-        color: #FFFFFF;
+        color: var(--white-text-color);
+        @media screen and (min-width: 768px) {
+       
+            font-size: 14px;
+            line-height: 1.76; 
+    
+        }
+        @media screen and (min-width: 1200px){
+            font-size: 16px;
+            
+        }
+    }
+
+    .product-button{
+        display: flex;
+        
     }
