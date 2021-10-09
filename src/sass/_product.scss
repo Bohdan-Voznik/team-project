@@ -119,6 +119,7 @@
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.04em;
+    padding-bottom: 30px;
     color: var(--white-text-color);
 
     @media screen and (min-width: 768px) {
@@ -128,6 +129,7 @@
 
     }
     @media screen and (min-width: 1200px){
+        padding-bottom: 32px;
         font-size: 30px;
         line-height: 1.13;
     }
@@ -138,10 +140,13 @@
         content: "";
         width: 6px;
         height: 6px;
+        border-radius: 50%;
 
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center, right, left;
+    background-position: bottom 32px left 151px, 
+    bottom 32px left 156px,
+    bottom 32px left 171px;
     background-color: var(--bg-color);
    
         background-image: url(../images/sprite.svg/#icon-bracket), 
@@ -154,23 +159,34 @@
        
         display: block;
         content: "";
+        margin-left: auto;
+        margin-right: auto;
         
         background-size: contain;
         background-repeat: no-repeat;
         background-position:  center; 
       }
         .product-list:nth-child(1)::before{
+            margin-bottom: 22px;
+
+            
+            margin-top: -113px;
             width: 249px;
             height: 252px;
         background-image: url(../images/mobice.png);
        
         
         @media screen and (min-width: 768px){
+            margin-bottom: 30px;
+
+            margin-top: -104px;
             width: 220px;
             height: 233px;
         background-image: url(../images/tablice.png);
         }
         @media screen and (min-width: 1200px){
+            margin-bottom: 38px;
+            margin-top: -210px;
             width: 335px;
             height: 335px;
             background-image: url(../images/compice.png);
@@ -178,17 +194,26 @@
         
       }
       .product-list:nth-child(2)::before{
+        margin-bottom: 22px;
+
+        margin-top: -113px;
         width: 249px;
         height: 252px;
     background-image: url(../images/mobcoffe.png);
    
     
     @media screen and (min-width: 768px){
+        margin-bottom: 30px;
+
+        margin-top: -104px;
         width: 220px;
         height: 233px;
     background-image: url(../images/tablcoffe.png);
     }
     @media screen and (min-width: 1200px){
+        margin-bottom: 38px;
+
+        margin-top: -210px;
         width: 335px;
         height: 335px;
         background-image: url(../images/compcoffe.png);
@@ -196,17 +221,27 @@
     
   }
   .product-list:nth-child(3)::before{
+    margin-bottom: 22px;
+
+    margin-top: -113px;
     width: 249px;
     height: 252px;
+
 background-image: url(../images/mobshake.png);
 
 
 @media screen and (min-width: 768px){
+    margin-bottom: 30px;
+
+    margin-top: -104px;
     width: 220px;
     height: 233px;
 background-image: url(../images/tablshaks.png);
 }
 @media screen and (min-width: 1200px){
+    margin-top: -210px;
+    margin-bottom: 38px;
+
     width: 335px;
     height: 335px;
     background-image: url(../images/compshakes.png);
@@ -224,21 +259,37 @@ background-image: url(../images/tablshaks.png);
         line-height: 1.5;
         text-align: center;
         letter-spacing: 0.04em;
+        max-width: 200px;
+
+            margin-bottom: 30px;
+            margin-left: 41px;
+            margin-right: 41px;
         
         color: var(--white-text-color);
+
         @media screen and (min-width: 768px) {
-       
             font-size: 14px;
             line-height: 1.76; 
+            max-width: 198px;
+
+            margin-bottom: 40px;
+            margin-left: 11px;
+            margin-right: 11px;
     
         }
         @media screen and (min-width: 1200px){
             font-size: 16px;
-            
+            max-width: 241px;
+
+            margin-bottom: 62px;
+            margin-left: 44px;
+            margin-right: 44px;
         }
     }
 
     .product-button{
         display: flex;
+        justify-content: center;
+        align-items: center;
 
     }

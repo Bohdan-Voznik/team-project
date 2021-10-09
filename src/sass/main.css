@@ -310,6 +310,7 @@ button {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.04em;
+  padding-bottom: 30px;
   color: var(--white-text-color);
 }
 
@@ -322,6 +323,7 @@ button {
 
 @media screen and (min-width: 1200px) {
   .product-list__tittle {
+    padding-bottom: 32px;
     font-size: 30px;
     line-height: 1.13;
   }
@@ -332,9 +334,10 @@ button {
   content: "";
   width: 6px;
   height: 6px;
+  border-radius: 50%;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center, right, left;
+  background-position: bottom 32px left 151px,  bottom 32px left 156px, bottom 32px left 171px;
   background-color: var(--bg-color);
   background-image: url(../images/sprite.svg/#icon-bracket), url(../images/sprite.svg/#icon-bracket), url(../images/sprite.svg/#icon-bracket);
 }
@@ -342,12 +345,16 @@ button {
 .product-list::before {
   display: block;
   content: "";
+  margin-left: auto;
+  margin-right: auto;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .product-list:nth-child(1)::before {
+  margin-bottom: 22px;
+  margin-top: -113px;
   width: 249px;
   height: 252px;
   background-image: url(../images/mobice.png);
@@ -355,6 +362,8 @@ button {
 
 @media screen and (min-width: 768px) {
   .product-list:nth-child(1)::before {
+    margin-bottom: 30px;
+    margin-top: -104px;
     width: 220px;
     height: 233px;
     background-image: url(../images/tablice.png);
@@ -363,6 +372,8 @@ button {
 
 @media screen and (min-width: 1200px) {
   .product-list:nth-child(1)::before {
+    margin-bottom: 38px;
+    margin-top: -210px;
     width: 335px;
     height: 335px;
     background-image: url(../images/compice.png);
@@ -370,6 +381,8 @@ button {
 }
 
 .product-list:nth-child(2)::before {
+  margin-bottom: 22px;
+  margin-top: -113px;
   width: 249px;
   height: 252px;
   background-image: url(../images/mobcoffe.png);
@@ -377,6 +390,8 @@ button {
 
 @media screen and (min-width: 768px) {
   .product-list:nth-child(2)::before {
+    margin-bottom: 30px;
+    margin-top: -104px;
     width: 220px;
     height: 233px;
     background-image: url(../images/tablcoffe.png);
@@ -385,6 +400,8 @@ button {
 
 @media screen and (min-width: 1200px) {
   .product-list:nth-child(2)::before {
+    margin-bottom: 38px;
+    margin-top: -210px;
     width: 335px;
     height: 335px;
     background-image: url(../images/compcoffe.png);
@@ -392,6 +409,8 @@ button {
 }
 
 .product-list:nth-child(3)::before {
+  margin-bottom: 22px;
+  margin-top: -113px;
   width: 249px;
   height: 252px;
   background-image: url(../images/mobshake.png);
@@ -399,6 +418,8 @@ button {
 
 @media screen and (min-width: 768px) {
   .product-list:nth-child(3)::before {
+    margin-bottom: 30px;
+    margin-top: -104px;
     width: 220px;
     height: 233px;
     background-image: url(../images/tablshaks.png);
@@ -407,6 +428,8 @@ button {
 
 @media screen and (min-width: 1200px) {
   .product-list:nth-child(3)::before {
+    margin-top: -210px;
+    margin-bottom: 38px;
     width: 335px;
     height: 335px;
     background-image: url(../images/compshakes.png);
@@ -420,6 +443,10 @@ button {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.04em;
+  max-width: 200px;
+  margin-bottom: 30px;
+  margin-left: 41px;
+  margin-right: 41px;
   color: var(--white-text-color);
 }
 
@@ -427,12 +454,20 @@ button {
   .product-list__text {
     font-size: 14px;
     line-height: 1.76;
+    max-width: 198px;
+    margin-bottom: 40px;
+    margin-left: 11px;
+    margin-right: 11px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .product-list__text {
     font-size: 16px;
+    max-width: 241px;
+    margin-bottom: 62px;
+    margin-left: 44px;
+    margin-right: 44px;
   }
 }
 
@@ -440,5 +475,11 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */
