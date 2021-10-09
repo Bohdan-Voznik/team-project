@@ -11,6 +11,11 @@
   line-height: 1.31;
   background-color: var(--bg-color);
   color: var(--accent-color);
+
+  &:focus,
+  &:hover {
+    background-color: var(--secondaru-bg-color);
+  }
 }
 
 .main-button__icon {
