@@ -174,28 +174,28 @@ button {
   fill: currentColor;
 }
 
-.section.about {
+.about {
   padding-top: 125px;
   padding-bottom: 20px;
   background: var(--secondaru-bg-color);
 }
 
 @media screen and (min-width: 768px) {
-  .section.about {
+  .about {
     padding-top: 130px;
     padding-bottom: 33px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .section.about {
+  .about {
     padding-top: 125px;
     padding-bottom: 20px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .section.about {
+  .about {
     background: url(/images/about/about_background-milk-mob-min_left-part@1x.png) left, url(/images/about/about_background-milk-mob-min_right-part@1x.png) right;
     background-repeat: no-repeat;
     background-size: contain;
@@ -203,8 +203,8 @@ button {
   }
 }
 
-@media screen and (max-width: 767px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
-  .section.about {
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .about {
     background: url(/images/about/about_background-milk-mob-min_left-part@2x.png) left, url(/images/about/about_background-milk-mob-min_right-part@2x.png) right;
     background-repeat: no-repeat;
     background-size: contain;
@@ -213,7 +213,7 @@ button {
 }
 
 @media screen and (min-width: 1280px) {
-  .section.about {
+  .about {
     background: url(/images/about/about_background-milk-desk-min_left-part@1x.png) left, url(/images/about/about_background-milk-desk-min_right-part@1x.png) right;
     background-repeat: no-repeat;
     background-size: contain;
@@ -221,8 +221,8 @@ button {
   }
 }
 
-@media screen and (min-width: 1280px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .section.about {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .about {
     background: url(/images/about/about_background-milk-desk-min_left-part@2x.png) left, url(/images/about/about_background-milk-desk-min_right-part@2x.png) right;
     background-repeat: no-repeat;
     background-size: contain;
@@ -231,8 +231,8 @@ button {
 }
 
 .about__pre-title {
-  font-family: 'Titan One', cursive;
-  font-style: normal;
+  font-family: 'Titan One';
+  font-style: cursive;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.16;
@@ -257,8 +257,8 @@ button {
 }
 
 .about__title {
-  font-family: 'Titan One', cursive;
-  font-style: normal;
+  font-family: 'Titan One';
+  font-style: cursive;
   font-weight: normal;
   font-size: 34px;
   line-height: 1.15;

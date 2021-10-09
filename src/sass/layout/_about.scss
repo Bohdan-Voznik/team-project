@@ -1,4 +1,4 @@
-.section.about {
+.about {
     padding-top: 125px;
     padding-bottom: 20px;
 
@@ -27,7 +27,7 @@
         background-size: contain;
         background-color: var(--secondaru-bg-color);
 
-        @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+        @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
 
@@ -48,7 +48,7 @@
         background-size: contain;
         background-color: var(--secondaru-bg-color);
 
-        @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+        @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
 
@@ -58,7 +58,6 @@
            background-size: contain;
            background-color: var(--secondaru-bg-color);
 
-
         }
 
 
@@ -67,8 +66,8 @@
 }
 
 .about__pre-title {
-    font-family: 'Titan One', cursive;
-    font-style: normal;
+    font-family: 'Titan One';
+    font-style: cursive;
     font-weight: normal;
     font-size: 18px;
     line-height: 1.16;
@@ -91,8 +90,8 @@
 }
 
 .about__title {
-    font-family: 'Titan One', cursive;
-    font-style: normal;
+    font-family: 'Titan One';
+    font-style: cursive;
     font-weight: normal;
     font-size: 34px;
     line-height: 1.15;
