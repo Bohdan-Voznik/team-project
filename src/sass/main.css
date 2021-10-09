@@ -328,7 +328,6 @@ button {
 }
 
 .product-list::before {
-  position: top;
   display: block;
   content: "";
   background-size: contain;

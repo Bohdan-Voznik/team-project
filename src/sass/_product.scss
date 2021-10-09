@@ -133,9 +133,10 @@
       }
       
       .product-list::before{
-        position: top;
+       
         display: block;
         content: "";
+        
         background-size: contain;
         background-repeat: no-repeat;
         background-position:  center; 
