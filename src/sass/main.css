@@ -157,7 +157,6 @@ button {
   fill: currentColor;
 }
 
-
 .about {
   padding-top: 125px;
   padding-bottom: 20px;
@@ -187,7 +186,7 @@ button {
   }
 }
 
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .about {
     background: url(/images/about/about_background-milk-mob-min_left-part@2x.png) left, url(/images/about/about_background-milk-mob-min_right-part@2x.png) right;
     background-repeat: no-repeat;
@@ -205,7 +204,7 @@ button {
   }
 }
 
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .about {
     background: url(/images/about/about_background-milk-desk-min_left-part@2x.png) left, url(/images/about/about_background-milk-desk-min_right-part@2x.png) right;
     background-repeat: no-repeat;
@@ -288,14 +287,9 @@ button {
 
 @media screen and (min-width: 768px) {
   .about__content {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: center;
     margin-top: 50px;
   }
 }
@@ -430,12 +424,8 @@ button {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.28;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   border: none;
   color: var(--accent-color);
   background: #ffffff;
@@ -561,5 +551,4 @@ button {
     line-height: 1.76;
   }
 }
-
 /*# sourceMappingURL=main.css.map */
