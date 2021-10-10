@@ -41,11 +41,13 @@
     display: flex;
     padding-top: 128px;
     padding-bottom: 90px;
-    margin-left: -30px;
+    margin-left: -15px;
+    margin-right: -15px;
 
     & > .contacts-cart {
-      flex-basis: calc(100% / 3 -30px);
-      margin-left: 30px;
+      flex-basis: calc(100% / 3 - 30px);
+      margin-left: 15px;
+      margin-right: 15px;
     }
   }
 
@@ -53,7 +55,6 @@
     display: flex;
     padding-top: 119px;
     padding-bottom: 81px;
-    margin-left: -30px;
 
     & > .contacts-cart {
       flex-basis: calc(100% / 3 -30px);
@@ -190,10 +191,11 @@
     @include text($font-size: 16px, $line-height: 1.813);
   }
 }
-.contacts-button {
-  display: flex;
+@media screen and(min-width:768px) {
+  .contacts-button {
+    display: flex;
+  }
 }
-
 .main-button--color {
   margin: auto;
   margin-bottom: 10px;

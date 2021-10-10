@@ -666,10 +666,12 @@ button {
   }
 }
 
-.contacts-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 768px) {
+  .contacts-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .main-button--color {
