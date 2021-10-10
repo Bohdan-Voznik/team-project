@@ -5,13 +5,28 @@
   background-image: url(../images/hero/ellipse-nodesktop@1x.png);
   background-repeat: no-repeat;
   background-position: bottom 75px left 56px;
-  // background-size: 171px, auto;
+  background-size: 345px auto;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero/ellipse-nodesktop@2x.png);
+  }
 
   @media screen and (min-width: 768px) {
     background-image: url(../images/hero/sotasty-tablet@1x.png),
       url(../images/hero/milk-tablet@1x.png), url(../images/hero/ellipse-nodesktop@1x.png);
     background-repeat: no-repeat;
     background-position: bottom left 566px, bottom 28px left 34px, bottom 46px left 307px;
+
+    background-size: 168px auto, 124px auto, 324px auto;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero/sotasty-tablet@2x.png),
+        url(../images/hero/milk-tablet@2x.png), url(../images/hero/ellipse-nodesktop@2x.png);
+    }
   }
 
   @media screen and (min-width: 1200px) {
@@ -19,6 +34,15 @@
       url(../images/hero/milk-desktop@1x.png), url(../images/hero/ellipse-desktop@1x.png);
     background-repeat: no-repeat;
     background-position: bottom left 878px, bottom 45px left 77px, bottom 75px left 475px;
+
+    background-size: 293px auto, 188px auto, 538px auto;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero/sotasty-desktop@2x.png),
+        url(../images/hero/milk-desktop@2x.png), url(../images/hero/ellipse-desktop@2x.png);
+    }
   }
 }
 //   animation: slide 10s linear;
@@ -37,15 +61,15 @@
 
 .hero-main {
   padding: 193px 82px 160px 0;
-  width: 230px;
+  width: 290px;
 
   @media screen and (min-width: 768px) {
     padding: 102px 0 66px 0;
-    width: 162px;
+    width: 180px;
   }
   @media screen and (min-width: 1200px) {
     padding: 171px 0 112px 0;
-    width: 277px;
+    width: 296px;
   }
 }
 .hero-main__title {
@@ -117,7 +141,7 @@
 
 .rotate-y:hover {
   /*   transform: perspective(400px) rotateY(45deg); */
-  animation: rotateY 2500ms infinite linear 1000ms;
+  animation: rotateY 2500ms infinite linear 500ms;
 }
 
 @keyframes rotateY {
