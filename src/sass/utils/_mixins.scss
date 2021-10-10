@@ -1,4 +1,9 @@
-@mixin text($justify-content: flex-start, $line-height: 1.83, $font-size: 12px) {
+@mixin text(
+  $justify-content: flex-start,
+  $line-height: 1.83,
+  $font-size: 12px,
+  $letter-spacing: 0.04em
+) {
   align-items: center;
   justify-content: $justify-content;
   font-family: DM Sans;
@@ -6,5 +11,5 @@
   font-style: normal;
   font-size: $font-size;
   line-height: $line-height;
-  letter-spacing: 0.04em;
+  letter-spacing: $letter-spacing;
 }

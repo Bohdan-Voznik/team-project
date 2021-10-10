@@ -57,7 +57,7 @@
         </div>
     </div>
     <div class="contacts-button container">
-        <button class="main-button main-button--color" type="button" data-modal-open>Our Locations
+        <button class="main-button main-button--color" type="button">Our Locations
             <svg class="main-button__icon">
                 <use href="./images/sprite.svg#icon-bracket"></use>
             </svg>
@@ -69,3 +69,64 @@
         </button>
     </div>   
 </section>
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal-window">
+        <button class="modal-window__close-btn" type="button" data-modal-close>
+            <svg class="modal-window__close-icon" width="11" height="11">
+                <use href="./images/sprite.svg#icon-icon-close"></use>
+            </svg>
+        </button>
+        <form class="modal-window__form">
+            <b class="modal-window__title">Оставьте свои данные, мы вам перезвоним</b>
+            <div class="modal-window__group">
+                <div class="modal-window__folder--form">
+                    <label for="name" class="modal-window__lable">Имя</label>
+                    <span class="modal-window__input-wrap">
+                        <input type="text" name="name-form" id="name" class="modal-window__input">
+                        <svg class="modal-window__icon" width="12" height="12">
+                            <use href="./images/sprite.svg#icon-name"></use>
+                        </svg>
+                    </span>
+                </div>
+                <div class="modal-window__folder--form">
+                    <label for="tel" class="modal-window__lable">Телефон</label>
+                    <span class="modal-window__input-wrap">
+                        <input type="text" name="tel-form" id="tel" class="modal-window__input">
+                        <svg class="modal-window__icon" width="13" height="13">
+                            <use href="./images/sprite.svg#icon-tel"></use>
+                        </svg>
+                    </span>
+                </div>
+                <div class="modal-window__folder--form">
+                    <label for="mail" class="modal-window__lable">Почта</label>
+                    <span class="modal-window__input-wrap">
+                        <input type="email" name="mail-form" id="mail" class="modal-window__input">
+                        <svg class="modal-window__icon" width="15" height="12">
+                            <use href="./images/sprite.svg#icon-mail"></use>
+                        </svg>
+                    </span>
+                </div>
+                <div class="modal-window__folder">
+                    <label for="comment" class="modal-window__lable">Коментарий</label>
+                    <span class="modal-window__commet-wrap">
+                        <textarea name="comment-form" id="comment" placeholder="Введите текст"
+                            class="modal-window__modal-comment"></textarea>
+                    </span>
+                </div>
+                <div class="modal-window__folder">
+                    <input type="checkbox" name="context-form" id="check"
+                        class="modal-window__checkbox visually-hidden">
+                    <label for="check" class="modal-window__check-label">
+                        <span class="modal-window__check">
+                            <svg class="modal-window__check-icon" width="11" height="8">
+                                <use href="./images/sprite.svg#icon-context"></use>
+                            </svg>
+                        </span>
+                        Соглашаюсь с рассылкой</a>
+                    </label>
+                </div>
+            </div>
+            <button class="main-button main-button__modal" type="button" data-modal-open>Отправить</button>
+        </form>
+    </div>
+</div>
