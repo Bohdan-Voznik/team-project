@@ -46,10 +46,10 @@
 }
 
 .gallery__radius {
-    border-radius: 7px;
+    border-radius: 20px;
     transform: scale(1);
     
-    transition: transform 150ms cubic-bezier(0, 0.55, 1, 0.53);
+    transition: transform 100ms cubic-bezier(0, 0.55, 1, 0.53);
     &:hover,
     &:focus {
         position: relative;
