@@ -45,7 +45,7 @@
     margin-left: -15px;
     margin-right: -15px;
 
-    & > .contacts-cart {
+    & > .contacts-list {
       flex-basis: calc(100% / 3 - 30px);
       margin-left: 15px;
       margin-right: 15px;
@@ -60,7 +60,7 @@
     margin-left: -10px;
     margin-right: -10px;
 
-    & > .contacts-cart {
+    & > .contacts-list {
       flex-basis: calc(100% / 3 - 20px);
       margin-left: 10px;
       margin-right: 10px;
@@ -70,7 +70,7 @@
   }
 }
 
-.contacts-cart {
+.contacts-list {
   display: flex;
   flex-direction: column;
   max-width: 220px;
@@ -102,7 +102,7 @@
   background-color: var(--bg-color);
 }
 
-.contacts-cart__category {
+.contacts-list__category {
   display: flex;
   max-width: 80px;
   max-height: 16px;
@@ -120,7 +120,7 @@
   border-radius: 4px;
   background-color: #f0d1a5;
 }
-.contacts-cart__category--color {
+.contacts-list__category--color {
   max-width: 130px;
   max-height: 16px;
   background-color: #c2e297;
@@ -131,7 +131,7 @@
     justify-content: center;
   }
 }
-.contacts-cart__title {
+.contacts-list__title {
   margin-bottom: 10px;
   @include text();
   color: var(--back-text-color);
@@ -142,7 +142,7 @@
     @include text($font-size: 16px, $line-height: 1.875);
   }
 }
-.contacts-cart__text {
+.contacts-list__text {
   @include text($line-height: 1.5);
   margin-bottom: 25px;
   color: var(--grey-text-color);
@@ -154,7 +154,7 @@
   }
 }
 
-.contacts-cart__days {
+.contacts-timetable__day {
   @include text();
   color: var(--back-text-color);
   @media screen and(min-width:768px) {
@@ -164,7 +164,7 @@
     @include text($font-size: 16px, $line-height: 1.875);
   }
 }
-.contacts-cart__time {
+.contacts-timetable__time {
   @include text();
   color: var(--secondary-title-color);
   margin-bottom: 25px;
@@ -176,7 +176,7 @@
   }
 }
 
-.contacts-cart__tel {
+.contacts-locations__tel {
   @include text($line-height: 1.5);
   text-decoration: none;
   color: var(--grey-text-color);
@@ -187,7 +187,7 @@
     @include text($font-size: 16px, $line-height: 1.813);
   }
 }
-.contacts-cart__mail {
+.contacts-locations__mail {
   margin-bottom: 25px;
   @include text($line-height: 1.5);
   text-decoration: none;
@@ -299,7 +299,7 @@
   }
 }
 
-.modal-window__title {
+.form__title {
   display: flex;
   text-align: center;
   @include text($justify-content: center, $font-size: 18px);
@@ -308,7 +308,7 @@
 
   color: #212121;
 }
-.modal-window__group {
+.form__group {
   display: block;
   width: 260px;
   min-height: 342px;
@@ -322,30 +322,30 @@
   }
 }
 
-.modal-window__folder--form {
+.form__folder--form {
   margin-bottom: 10px;
 }
-.modal-window__folder {
+.form__folder {
   @media screen and(min-width:480px) {
     width: 260px;
     margin-right: 0;
   }
 }
-.modal-window__lable {
+.form__lable {
   display: block;
   @include text();
   margin-bottom: 4px;
 
   color: #757575;
 }
-.modal-window__input-wrap {
+.form__input-wrap {
   display: block;
   position: relative;
   @media screen and(min-width:480px) {
     width: 260px;
   }
 }
-.modal-window__input {
+.form__input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -363,7 +363,7 @@
   }
 }
 
-.modal-window__icon {
+.form__icon {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -373,14 +373,14 @@
   &:focus {
     fill: var(--accent-color);
   }
-  .modal-window__input:hover + &,
-  .modal-window__input:focus + & {
+  .form__input:hover + &,
+  .form__input:focus + & {
     fill: var(--accent-color);
     cursor: pointer;
   }
 }
 
-.modal-window__commet-wrap {
+.form__commet-wrap {
   display: block;
   width: 260px;
   height: 120px;
@@ -402,7 +402,7 @@
   }
 }
 
-.modal-window__modal-comment {
+.form__modal-comment {
   width: 240px;
   height: 100px;
   margin: 12px 16px;
@@ -419,20 +419,20 @@
   }
 }
 
-.modal-window__checkbox {
-  &:checked + .modal-window__check-label > .modal-window__check {
+.form__checkbox {
+  &:checked + .form__check-label > .form__check {
     background: var(--accent-color);
     border: none;
   }
 }
-.modal-window__check-label {
+.form__check-label {
   display: inline-flex;
   margin-bottom: 20px;
   @include text($letter-spacing: 0.01em);
 
   color: #757575;
 }
-.modal-window__check {
+.form__check {
   width: 16px;
   height: 15px;
   border: 2px solid#212121;
