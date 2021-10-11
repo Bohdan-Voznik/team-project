@@ -157,6 +157,42 @@ button {
   fill: currentColor;
 }
 
+.gallery {
+  margin-top: 97px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff5f6), color-stop(40%, #fff5f6), color-stop(40%, #ffffff), to(#ffffff));
+  background-image: linear-gradient(to bottom, #fff5f6 0%, #fff5f6 40%, #ffffff 40%, #ffffff 100%);
+}
+
+.gallery__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.gallery__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.gallery__item {
+  margin: 0 2px 2px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__item {
+    margin: 0 4px 4px 0;
 .about {
   padding-top: 125px;
   padding-bottom: 20px;
@@ -453,6 +489,26 @@ button {
 }
 
 @media screen and (min-width: 1280px) {
+  .gallery__item {
+    margin: 0 6px 6px 0;
+  }
+}
+
+.gallery__picture {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.gallery__radius {
+  border-radius: 7px;
+}
+
+.list-down {
+  margin-top: 20px;
+}
+
+.list-up {
+  margin-bottom: 20px;
   .about__button {
     margin-top: 45px;
   }
