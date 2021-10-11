@@ -51,7 +51,7 @@
 
 .product-overlay{
     position: relative;
-    // overflow: hidden;
+    overflow: hidden;
 }
 .overlay-text{
     position: absolute;
@@ -60,7 +60,7 @@
 
     font-family: Titan One;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.04em;
@@ -76,10 +76,10 @@
 
 }
 .product-button:hover .overlay-text{
-    transform: translate(-0%);
+    transform: translate(0%);
   }
   .product-button:focus .overlay-text{
-    transform: translate(-0%);
+    transform: translate(0%);
   }
 
 
