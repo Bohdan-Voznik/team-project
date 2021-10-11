@@ -1,9 +1,17 @@
 .footer {
-  padding-top: 113px;
   background-color: var(--secondary-bg-color);
 
-  @media screen and (min-width: 768px) {
-    padding-top: 158px;
+  &__container {
+    padding-top: 113px;
+    padding-bottom: 43px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 158px;
+      padding-bottom: 91px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 97px;
+    }
   }
 
   &__wrap {
