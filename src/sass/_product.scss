@@ -77,6 +77,9 @@
 .product-button.link-button:hover{
     transform: translateY(0%);
 }
+.product-button.link-button:focus{
+    transform: translateY(0%);
+}
     .product-list {
         display: flex;
         flex-direction: column;
@@ -155,27 +158,9 @@
     }
         
     }
-    .product-item__tittle::after{
-        display: block;
-        content: "";
-        width: 6px;
-        height: 6px;
-        border-radius: 50%;
+    
 
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right, center, left;
-   
-    background-color: var(--bg-color);
-   
-        background-image: url(../images/sprite.svg/#icon-dots), 
-        url(../images/sprite.svg/#icon-dots),
-        url(../images/sprite.svg/#iicon-dots);
-        background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right, center, left;
-      }
-      
+
       .product-item::before{
        
         display: block;
@@ -322,6 +307,23 @@ background-image:url(../images/tablshaks2x-min.png);
   background-image:url(../images/compmilc2x-min.png);
 }
   }
+
+  .product-item__tittle::after{
+    display: block;
+    content: "";
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 26px;
+    height: 6px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:  center; 
+
+    background-image: url(../images/tresdots-min.png);
+     }
+
 
     .product-item__text{
         font-family: DM Sans;
