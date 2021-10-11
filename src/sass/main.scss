@@ -1,9 +1,12 @@
 @import './utils/variables';
 @import './utils/reset';
 @import './utils/hiden';
+@import './utils/mixins';
 @import './components/container';
 @import './components/link-button';
 @import './components/main-button';
+@import './components/modal';
+@import './layout/contacts';
 @import './layouts/header';
 @import './layouts/hero';
 @import './layouts/mobile-menu';
