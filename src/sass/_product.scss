@@ -1,16 +1,6 @@
 
 .product{
     
-    background-color: var(--secondaru-bg-color);
-//     @media screen and (min-width: 768px) {
-//         display: flex;
-//         align-self: center;
-//         justify-content: center;
-//       }
-//       @media screen and (min-width: 1200px){
-
-//       }
-// 
 }
 .product__text{
     font-family: Titan One;
@@ -20,6 +10,7 @@
     text-align: center;
     color: var(--secondary-title-color);
     padding-top: 121px;
+    
 
     
     @media screen and (min-width: 768px) {
@@ -57,14 +48,80 @@
         }
     }
 
+// .overlay {
+//     display: inline-block;
+//     content: "";
+//     position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: var(--secondary-title-color);
+//   opacity: 0;
+// }
+
+// // .product-overlay-text{
+// // // position: absolute;
     
-    .product__list {
+// // display: flex;
+// // align-items: center;
+
+// // bottom: 0;
+// // left: 0;
+
+// // height: 100%;
+// // padding: 24px 64px 23px 64px;
+
+// // font-style: normal;
+// // font-weight: normal;
+// // font-size: 18px;
+// // line-height: 1.56;
+// // 
+// // color: #FFFFFF;
+// // overflow: auto;
+// // transform: translateY(100%);
+// // transition: transform 250ms linear;
+// }
+
+// // .product-overlay-text:hover .card-text{
+// //     transform: translate(-0%);
+// // }
+.product-overlay{
+    position: relative;
+    // overflow: hidden;
+}
+.overlay-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    font-family: Titan One;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    padding-bottom: 30px;
+    color: var(--white-text-color);
+
+    background-color: var(--grey-text-color);
+    padding: 25px 25px 25px 25px;
+    overflow: auto;
+    transform: translateY(100%);
+    transition: transform 500ms linear;
+
+}
+.product-button.link-button:hover{
+    transform: translateY(0%);
+}
+    .product-list {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-left: auto;
         margin-right: auto;
         padding: 0;
+    
 
     
     @media screen and (min-width: 768px) {
@@ -81,7 +138,7 @@
         
 }
     .product-item{
-        
+        // position: relative;
         width: 280px;
         height: 485px;
         background: var(--secondary-title-color);
@@ -144,15 +201,16 @@
 
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: bottom 32px left 151px, 
-    bottom 32px left 156px,
-    bottom 32px left 171px;
+    background-position: right, center, left;
+   
     background-color: var(--bg-color);
    
-        background-image: url(../images/sprite.svg/#icon-bracket), 
-        url(../images/sprite.svg/#icon-bracket),
-        url(../images/sprite.svg/#icon-bracket);
-        
+        background-image: url(../images/sprite.svg/#icon-dots), 
+        url(../images/sprite.svg/#icon-dots),
+        url(../images/sprite.svg/#iicon-dots);
+        background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right, center, left;
       }
       
       .product-item::before{
@@ -168,15 +226,21 @@
       }
         .product-item:nth-child(1)::before{
             margin-bottom: 22px;
-
-            
             margin-top: -113px;
             width: 249px;
             height: 252px;
         background-image: url(../images/mobice.png);
-       
-        
-        @media screen and (min-width: 768px){
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+           
+          background-image: 
+           url(../images/mobice2x-min.png);
+        }
+      
+     
+        @media screen and (min-width:768px){
             margin-bottom: 30px;
 
             margin-top: -104px;
@@ -184,6 +248,13 @@
             height: 233px;
         background-image: url(../images/tablice.png);
         }
+
+        @media screen and (min-width:768px) and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+      background-image:url(../images/tablice2x-min.png);
+  }
+
         @media screen and (min-width: 1200px){
             margin-bottom: 38px;
             margin-top: -210px;
@@ -191,8 +262,14 @@
             height: 335px;
             background-image: url(../images/compice.png);
             }
+            @media screen and (min-width:1200px) and (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+          background-image:url(../images/compicecream2x-min.png);
+      }
         
       }
+      
       .product-item:nth-child(2)::before{
         margin-bottom: 22px;
 
@@ -200,7 +277,14 @@
         width: 249px;
         height: 252px;
     background-image: url(../images/mobcoffe.png);
-   
+
+     @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+     
+    background-image: 
+     url(../images/mobcoffe2x-min.png);
+  }
     
     @media screen and (min-width: 768px){
         margin-bottom: 30px;
@@ -210,6 +294,11 @@
         height: 233px;
     background-image: url(../images/tablcoffe.png);
     }
+    @media screen and (min-width:768px) and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+      background-image:url(../images/tablcoffe2x-min.png);
+        }
     @media screen and (min-width: 1200px){
         margin-bottom: 38px;
 
@@ -218,7 +307,11 @@
         height: 335px;
         background-image: url(../images/compcoffe.png);
         }
-    
+        @media screen and (min-width:1200px) and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+      background-image:url(../images/compcoffe2x-min.png);
+        }
   }
   .product-item:nth-child(3)::before{
     margin-bottom: 22px;
@@ -228,6 +321,13 @@
     height: 252px;
 
 background-image: url(../images/mobshake.png);
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+   
+  background-image: 
+   url(../images/mobshake2x-min.png);
+}
 
 
 @media screen and (min-width: 768px){
@@ -238,6 +338,12 @@ background-image: url(../images/mobshake.png);
     height: 233px;
 background-image: url(../images/tablshaks.png);
 }
+@media screen and (min-width:768px) and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+background-image:url(../images/tablshaks2x-min.png);
+}
+
 @media screen and (min-width: 1200px){
     margin-top: -210px;
     margin-bottom: 38px;
@@ -246,12 +352,15 @@ background-image: url(../images/tablshaks.png);
     height: 335px;
     background-image: url(../images/compshakes.png);
     }
-
+    
+    @media screen and (min-width:1200px) and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+  background-image:url(../images/compmilc2x-min.png);
 }
-
+  }
 
     .product-item__text{
-    
         font-family: DM Sans;
       
         font-weight: 700;
