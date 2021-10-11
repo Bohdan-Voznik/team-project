@@ -8,7 +8,7 @@
     font-size: 18px;
     line-height: 1.16;
     text-align: center;
-    color: var(--secondary-title-color);
+    color: var( --secondary-title-color);
     padding-top: 121px;
     
 
@@ -48,44 +48,7 @@
         }
     }
 
-// .overlay {
-//     display: inline-block;
-//     content: "";
-//     position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   background-color: var(--secondary-title-color);
-//   opacity: 0;
-// }
 
-// // .product-overlay-text{
-// // // position: absolute;
-    
-// // display: flex;
-// // align-items: center;
-
-// // bottom: 0;
-// // left: 0;
-
-// // height: 100%;
-// // padding: 24px 64px 23px 64px;
-
-// // font-style: normal;
-// // font-weight: normal;
-// // font-size: 18px;
-// // line-height: 1.56;
-// // 
-// // color: #FFFFFF;
-// // overflow: auto;
-// // transform: translateY(100%);
-// // transition: transform 250ms linear;
-// }
-
-// // .product-overlay-text:hover .card-text{
-// //     transform: translate(-0%);
-// // }
 .product-overlay{
     position: relative;
     // overflow: hidden;
