@@ -58,7 +58,7 @@
     }
 
     
-    .product__cardsed {
+    .product__list {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -80,7 +80,7 @@
     }
         
 }
-    .product-list{
+    .product-item{
         
         width: 280px;
         height: 485px;
@@ -112,7 +112,7 @@
        }
 }
     
-    .product-list__tittle{
+    .product-item__tittle{
         font-family: Titan One;
     font-weight: 400;
     font-size: 20px;
@@ -135,7 +135,7 @@
     }
         
     }
-    .product-list__tittle::after{
+    .product-item__tittle::after{
         display: block;
         content: "";
         width: 6px;
@@ -155,7 +155,7 @@
         
       }
       
-      .product-list::before{
+      .product-item::before{
        
         display: block;
         content: "";
@@ -166,7 +166,7 @@
         background-repeat: no-repeat;
         background-position:  center; 
       }
-        .product-list:nth-child(1)::before{
+        .product-item:nth-child(1)::before{
             margin-bottom: 22px;
 
             
@@ -193,7 +193,7 @@
             }
         
       }
-      .product-list:nth-child(2)::before{
+      .product-item:nth-child(2)::before{
         margin-bottom: 22px;
 
         margin-top: -113px;
@@ -220,7 +220,7 @@
         }
     
   }
-  .product-list:nth-child(3)::before{
+  .product-item:nth-child(3)::before{
     margin-bottom: 22px;
 
     margin-top: -113px;
@@ -250,7 +250,7 @@ background-image: url(../images/tablshaks.png);
 }
 
 
-    .product-list__text{
+    .product-item__text{
     
         font-family: DM Sans;
       

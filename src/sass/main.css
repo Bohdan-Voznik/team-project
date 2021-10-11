@@ -230,7 +230,7 @@ button {
   }
 }
 
-.product__cardsed {
+.product__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -247,7 +247,7 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .product__cardsed {
+  .product__list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -257,7 +257,7 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
-  .product__cardsed {
+  .product__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -268,7 +268,7 @@ button {
   }
 }
 
-.product-list {
+.product-item {
   width: 280px;
   height: 485px;
   background: var(--secondary-title-color);
@@ -278,19 +278,19 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .product-list {
+  .product-item {
     width: 220px;
     height: 485px;
     margin-bottom: 112px;
     margin-top: 0px;
   }
-  .product-list:not(:last-child) {
+  .product-item:not(:last-child) {
     margin-right: 20px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .product-list {
+  .product-item {
     width: 329px;
     height: 525px;
     margin-top: 0px;
@@ -298,12 +298,12 @@ button {
     -ms-flex-preferred-size: calc(100%/3 - 30px);
         flex-basis: calc(100%/3 - 30px);
   }
-  .product-list:not(:last-child) {
+  .product-item:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.product-list__tittle {
+.product-item__tittle {
   font-family: Titan One;
   font-weight: 400;
   font-size: 20px;
@@ -315,21 +315,21 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .product-list__tittle {
+  .product-item__tittle {
     font-size: 28px;
     line-height: 0.8;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .product-list__tittle {
+  .product-item__tittle {
     padding-bottom: 32px;
     font-size: 30px;
     line-height: 1.13;
   }
 }
 
-.product-list__tittle::after {
+.product-item__tittle::after {
   display: block;
   content: "";
   width: 6px;
@@ -342,7 +342,7 @@ button {
   background-image: url(../images/sprite.svg/#icon-bracket), url(../images/sprite.svg/#icon-bracket), url(../images/sprite.svg/#icon-bracket);
 }
 
-.product-list::before {
+.product-item::before {
   display: block;
   content: "";
   margin-left: auto;
@@ -352,7 +352,7 @@ button {
   background-position: center;
 }
 
-.product-list:nth-child(1)::before {
+.product-item:nth-child(1)::before {
   margin-bottom: 22px;
   margin-top: -113px;
   width: 249px;
@@ -361,7 +361,7 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .product-list:nth-child(1)::before {
+  .product-item:nth-child(1)::before {
     margin-bottom: 30px;
     margin-top: -104px;
     width: 220px;
@@ -371,7 +371,7 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
-  .product-list:nth-child(1)::before {
+  .product-item:nth-child(1)::before {
     margin-bottom: 38px;
     margin-top: -210px;
     width: 335px;
@@ -380,7 +380,7 @@ button {
   }
 }
 
-.product-list:nth-child(2)::before {
+.product-item:nth-child(2)::before {
   margin-bottom: 22px;
   margin-top: -113px;
   width: 249px;
@@ -389,7 +389,7 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .product-list:nth-child(2)::before {
+  .product-item:nth-child(2)::before {
     margin-bottom: 30px;
     margin-top: -104px;
     width: 220px;
@@ -399,7 +399,7 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
-  .product-list:nth-child(2)::before {
+  .product-item:nth-child(2)::before {
     margin-bottom: 38px;
     margin-top: -210px;
     width: 335px;
@@ -408,7 +408,7 @@ button {
   }
 }
 
-.product-list:nth-child(3)::before {
+.product-item:nth-child(3)::before {
   margin-bottom: 22px;
   margin-top: -113px;
   width: 249px;
@@ -417,7 +417,7 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .product-list:nth-child(3)::before {
+  .product-item:nth-child(3)::before {
     margin-bottom: 30px;
     margin-top: -104px;
     width: 220px;
@@ -427,7 +427,7 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
-  .product-list:nth-child(3)::before {
+  .product-item:nth-child(3)::before {
     margin-top: -210px;
     margin-bottom: 38px;
     width: 335px;
@@ -436,7 +436,7 @@ button {
   }
 }
 
-.product-list__text {
+.product-item__text {
   font-family: DM Sans;
   font-weight: 700;
   font-size: 14px;
@@ -451,7 +451,7 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .product-list__text {
+  .product-item__text {
     font-size: 14px;
     line-height: 1.76;
     max-width: 198px;
@@ -462,7 +462,7 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
-  .product-list__text {
+  .product-item__text {
     font-size: 16px;
     max-width: 241px;
     margin-bottom: 62px;
