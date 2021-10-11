@@ -1,7 +1,21 @@
 @import './utils/variables';
 @import './utils/reset';
 @import './utils/hiden';
+@import './utils/mixins';
 @import './components/container';
 @import './components/link-button';
 @import './components/main-button';
+
 @import './product';
+
+@import './components/modal';
+@import './layout/contacts';
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/mobile-menu';
+@import './layout/about';
+@import './layout/about_modal-window';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layouts/footer';
+
