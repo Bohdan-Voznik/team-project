@@ -6,6 +6,7 @@
   border-radius: 20px;
   background-color: var(--bg-color);
   color: var(--accent-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
@@ -19,6 +20,7 @@
 .link-button--accent {
   background-color: var(--accent-color);
   color: var(--white-text-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: var(--secondary-accent-color);
@@ -43,7 +45,7 @@
   font-family: DM Sans;
   font-weight: 400;
   font-size: 8px;
-  line-height: 128;
+  line-height: 1.28;
 
   @media screen and (min-width: 1200px) {
     width: 138px;
