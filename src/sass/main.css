@@ -367,6 +367,8 @@ button {
   letter-spacing: 0.04em;
   padding-top: 40px;
   margin-bottom: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
   color: #212121;
 }
 
@@ -2371,8 +2373,10 @@ button {
   margin: 0 auto;
 }
 
-.contacts-item:not(:last-child) {
-  margin-bottom: 20px;
+@media screen and (max-width: 767px) {
+  .contacts-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -2405,6 +2409,12 @@ button {
     padding-left: 43px;
     margin-left: 15px;
     margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-list__contacts-item {
+    margin-bottom: 54px;
   }
 }
 
