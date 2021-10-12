@@ -1102,6 +1102,20 @@ body.modal-open {
   padding-top: 121px;
 }
 
+@media screen and (min-width: 768px) {
+  .product {
+    padding-top: 122px;
+    padding-bottom: 112px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product {
+    padding-top: 127px;
+    padding-bottom: 119px;
+  }
+}
+
 .product__text {
   font-family: Titan One;
   font-weight: 400;
@@ -1115,7 +1129,6 @@ body.modal-open {
   .product__text {
     font-size: 26px;
     line-height: 1.15;
-    padding-top: 122px;
   }
 }
 
@@ -1123,7 +1136,6 @@ body.modal-open {
   .product__text {
     font-size: 30px;
     line-height: 1.13;
-    padding-top: 127px;
   }
 }
 
@@ -1153,11 +1165,6 @@ body.modal-open {
   }
 }
 
-.product-overlay {
-  position: relative;
-  overflow: hidden;
-}
-
 .overlay-text {
   position: absolute;
   bottom: 0;
@@ -1181,14 +1188,24 @@ body.modal-open {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.product-button {
+  display: inline-block;
+}
+
+.product-overlay {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
 .product-button:hover .overlay-text {
-  -webkit-transform: translate(0%);
-          transform: translate(0%);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .product-button:focus .overlay-text {
-  -webkit-transform: translate(0%);
-          transform: translate(0%);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .product-list {
@@ -1245,7 +1262,6 @@ body.modal-open {
   .product-item {
     width: 220px;
     height: 485px;
-    margin-bottom: 112px;
     margin-top: 0px;
   }
   .product-item:not(:last-child) {
@@ -1258,7 +1274,6 @@ body.modal-open {
     width: 329px;
     height: 525px;
     margin-top: 0px;
-    margin-bottom: 119px;
     -ms-flex-preferred-size: calc(100% / 3 - 30px);
         flex-basis: calc(100% / 3 - 30px);
   }
@@ -1267,15 +1282,15 @@ body.modal-open {
   }
 }
 
-.product-item__color-box {
+.product-item.color--pink {
   background: var(--secondary-title-color);
 }
 
-.product-item__color {
+.product-item.color--orange {
   background-color: #F0D1A5;
 }
 
-.product-item__color-bg {
+.product-item.color--green {
   background-color: #C2E297;
 }
 
@@ -1500,18 +1515,6 @@ body.modal-open {
     margin-left: 44px;
     margin-right: 44px;
   }
-}
-
-.product-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .about {

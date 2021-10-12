@@ -53,15 +53,13 @@
   }
 }
 
-.product-overlay {
-  position: relative;
-  overflow: hidden;
-}
+// .product-overlay {
+  
+// }
 .overlay-text {
   position: absolute;
   bottom: 0;
   left: 0;
- 
 
   font-family: Titan One;
   font-weight: 400;
@@ -80,11 +78,23 @@
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.product-button:hover .overlay-text {
-  transform: translate(0%);
+
+.product-button {
+  display: inline-block;
 }
+
+.product-overlay{
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.product-button:hover .overlay-text {
+  transform: translateY(0);
+}
+
 .product-button:focus .overlay-text {
-  transform: translate(0%);
+  transform: translateY(0);
 }
 
 .product-list {
@@ -110,6 +120,7 @@
  
   width: 280px;
   height: 485px;
+ 
   
   border-radius: 24px;
   padding-bottom: 41px;
@@ -350,9 +361,3 @@
   }
 }
 
-.product-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
- 
-}
