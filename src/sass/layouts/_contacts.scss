@@ -11,95 +11,81 @@
   }
 }
 .contacts {
+  background-image: linear-gradient(
+    to bottom,
+    var(--bg-color) 11%,
+    var(--secondary-bg-color) 11%,
+    var(--secondary-bg-color) 89%
+  );
+
+  @media screen and(min-width:768px) {
+    background-image: linear-gradient(
+      to bottom,
+      var(--bg-color) 24%,
+      var(--secondary-bg-color) 24%,
+      var(--secondary-bg-color) 76%
+    );
+  }
+
   @media screen and(min-width:1200px) {
     background-image: linear-gradient(
       to bottom,
       var(--bg-color) 28%,
-      var(--secondaru-bg-color) 28%,
-      var(--secondaru-bg-color) 72%
-    );
-  }
-  @media screen and(min-width:768px) and (max-width: 1199px) {
-    background-image: linear-gradient(
-      to bottom,
-      var(--bg-color) 24%,
-      var(--secondaru-bg-color) 24%,
-      var(--secondaru-bg-color) 76%
-    );
-  }
-  @media screen and(min-width:320px) and (max-width: 480px) {
-    background-image: linear-gradient(
-      to bottom,
-      var(--bg-color) 11%,
-      var(--secondaru-bg-color) 11%,
-      var(--secondaru-bg-color) 89%
+      var(--secondary-bg-color) 28%,
+      var(--secondary-bg-color) 72%
     );
   }
 }
 .contacts-list {
   padding: 86px 30px 54px 30px;
-  @media screen and(min-width:1200px) {
-    display: flex;
-    padding-top: 132px;
-    padding-bottom: 86px;
-    margin-left: -15px;
-    margin-right: -15px;
-
-    & > .contacts-item {
-      flex-basis: calc(100% / 3 - 30px);
-      margin-left: 15px;
-      margin-right: 15px;
-    }
-  }
-
   @media screen and(min-width:768px) {
     display: flex;
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 119px;
     padding-bottom: 81px;
-    margin-left: -10px;
-    margin-right: -10px;
-
-    & > .contacts-item {
-      flex-basis: calc(100% / 3 - 20px);
-      margin-left: 10px;
-      margin-right: 10px;
-    }
+    margin: -10px;
   }
-  @media screen and(min-width:480px) and(max-width:768px) {
+
+  @media screen and(min-width:1200px) {
+    padding-top: 132px;
+    padding-bottom: 86px;
+    margin: -15px;
   }
 }
 
 .contacts-item {
-  display: flex;
-  flex-direction: column;
-  max-width: 220px;
-  min-height: 427px;
-  padding: 43px 20px;
-  margin: auto;
-  margin-bottom: 20px;
-  @media screen and(min-width: 480px) {
-    max-width: 220px;
-    min-height: 427px;
-    padding: 43px 20px;
-    margin: auto;
+  border-radius: 30px;
+  border: 1px solid#E1E1E1;
+  background-color: var(--bg-color);
+  min-width: 220px;
+  padding-top: 43px;
+  padding-right: 20px;
+  padding-bottom: 43px;
+  padding-left: 20px;
+  margin: 0 auto;
+  &:not(:last-child) {
     margin-bottom: 20px;
   }
+
+  @media screen and(min-width: 480px) {
+    width: 337px;
+  }
   @media screen and(min-width:768px) {
-    max-width: 220px;
-    min-height: 544px;
-    padding: 50px 31px;
-    margin: auto;
+    flex-basis: calc((100% - 60px) / 3);
+    margin: 10px;
+    padding-top: 50px;
+    padding-right: 31px;
+    padding-bottom: 50px;
+    padding-left: 31px;
   }
   @media screen and(min-width:1200px) {
-    max-width: 330px;
-    min-height: 572px;
-    padding: 51px 44px 62px;
-    margin: auto;
+    padding-top: 51px;
+    padding-right: 43px;
+    padding-bottom: 62px;
+    padding-left: 43px;
+    margin: 15px;
   }
-  border-radius: 30px;
-  border: 1px Solid#E1E1E1;
-  background-color: var(--bg-color);
 }
 
 .contacts-item__category {
@@ -188,7 +174,6 @@
   }
 }
 .contacts-locations__mail {
-  margin-bottom: 25px;
   @include text($line-height: 1.5);
   text-decoration: none;
   color: var(--grey-text-color);
@@ -208,28 +193,5 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
-  }
-}
-.main-button--color {
-  margin: auto;
-  margin-bottom: 10px;
-  @media screen and(min-width:768px) {
-    margin: 0;
-    margin-right: 15px;
-  }
-  @media screen and(min-width:1200px) {
-    margin: 0;
-    padding-left: 0;
-    padding-right: 0;
-
-    margin-right: 15px;
-  }
-  color: var(--white-text-color);
-  background-color: var(--accent-color);
-}
-.contacts-set__main-button {
-  margin: auto;
-  @media screen and(min-width:768px) {
-    margin: 0;
   }
 }
