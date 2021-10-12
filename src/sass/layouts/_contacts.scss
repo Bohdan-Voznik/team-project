@@ -11,6 +11,8 @@
   }
 }
 .contacts {
+  padding-top: 43px;
+  padding-bottom: 60px;
   background-image: linear-gradient(
     to bottom,
     var(--bg-color) 11%,
@@ -19,6 +21,8 @@
   );
 
   @media screen and(min-width:768px) {
+    padding-top: 59px;
+    padding-bottom: 79px;
     background-image: linear-gradient(
       to bottom,
       var(--bg-color) 24%,
@@ -28,6 +32,8 @@
   }
 
   @media screen and(min-width:1200px) {
+    padding-top: 66px;
+    padding-bottom: 82px;
     background-image: linear-gradient(
       to bottom,
       var(--bg-color) 28%,
@@ -37,20 +43,22 @@
   }
 }
 .contacts-list {
-  padding: 86px 30px 54px 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   @media screen and(min-width:768px) {
     display: flex;
     padding-left: 0;
     padding-right: 0;
-    padding-top: 119px;
-    padding-bottom: 81px;
-    margin: -10px;
+
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 81px;
   }
 
   @media screen and(min-width:1200px) {
-    padding-top: 132px;
-    padding-bottom: 86px;
-    margin: -15px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 86px;
   }
 }
 
@@ -58,7 +66,7 @@
   border-radius: 30px;
   border: 1px solid#E1E1E1;
   background-color: var(--bg-color);
-  min-width: 220px;
+  max-width: 220px;
   padding-top: 43px;
   padding-right: 20px;
   padding-bottom: 43px;
@@ -69,22 +77,26 @@
   }
 
   @media screen and(min-width: 480px) {
-    width: 337px;
+    max-width: 220px;
   }
   @media screen and(min-width:768px) {
     flex-basis: calc((100% - 60px) / 3);
-    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     padding-top: 50px;
     padding-right: 31px;
     padding-bottom: 50px;
     padding-left: 31px;
   }
   @media screen and(min-width:1200px) {
+    flex-basis: calc((100% - 60px) / 3);
+    max-width: 330px;
     padding-top: 51px;
     padding-right: 43px;
     padding-bottom: 62px;
     padding-left: 43px;
-    margin: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 
