@@ -16,7 +16,16 @@
 
   &:focus,
   &:hover {
-    background-color: var(--secondary-bg-color);
+    background-color: #ecebeb;
+  }
+}
+
+.main-button--red {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  &:focus,
+  &:hover {
+    background-color: #d41342;
   }
 }
 
