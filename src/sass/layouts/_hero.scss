@@ -3,6 +3,7 @@
 }
 
 .hero-bg {
+  overflow: hidden;
   position: relative;
   display: flex;
   background-image: url(../images/hero/ellipse-nodesktop@1x.png);
@@ -20,7 +21,7 @@
     background-image: url(../images/hero/sotasty-tablet@1x.png),
       url(../images/hero/milk-tablet@1x.png), url(../images/hero/ellipse-nodesktop@1x.png);
     background-repeat: no-repeat;
-    background-position: bottom left 566px, bottom 28px left 34px, bottom 46px left 307px;
+    background-position: bottom left 566px, bottom 28px left 34px, bottom 46px left 284px;
     background-size: 168px auto, 124px auto, 324px auto;
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -35,7 +36,7 @@
     background-image: url(../images/hero/sotasty-desktop@1x.png),
       url(../images/hero/milk-desktop@1x.png), url(../images/hero/ellipse-desktop@1x.png);
     background-repeat: no-repeat;
-    background-position: bottom left 878px, bottom 45px left 77px, bottom 75px left 475px;
+    background-position: bottom left 878px, bottom 45px left 77px, bottom 75px left 444px;
     background-size: 293px auto, 188px auto, 538px auto;
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -128,8 +129,8 @@
   }
 }
 
-.rotate-y:hover {
-  animation: rotateY 2500ms infinite linear 500ms;
+.rotate-y {
+  animation: rotateY 10s infinite linear 3000ms;
 }
 
 @keyframes rotateY {
@@ -137,80 +138,8 @@
     transform: perspective(400px) rotateY(0deg);
   }
 
-  5% {
-    transform: perspective(400px) rotateY(18deg);
-  }
-
-  10% {
-    transform: perspective(400px) rotateY(36deg);
-  }
-
-  15% {
-    transform: perspective(400px) rotateY(54deg);
-  }
-
-  20% {
-    transform: perspective(400px) rotateY(72deg);
-  }
-
-  25% {
-    transform: perspective(400px) rotateY(90deg);
-  }
-
-  30% {
-    transform: perspective(400px) rotateY(108deg);
-  }
-
-  35% {
-    transform: perspective(400px) rotateY(116deg);
-  }
-
-  40% {
-    transform: perspective(400px) rotateY(132deg);
-  }
-
-  45% {
-    transform: perspective(400px) rotateY(150deg);
-  }
-
-  50% {
-    transform: perspective(400px) rotateY(168deg);
-  }
-
-  55% {
-    transform: perspective(400px) rotateY(186deg);
-  }
-
-  60% {
-    transform: perspective(400px) rotateY(204deg);
-  }
-
-  65% {
-    transform: perspective(400px) rotateY(222deg);
-  }
-
-  70% {
-    transform: perspective(400px) rotateY(240deg);
-  }
-
-  75% {
-    transform: perspective(400px) rotateY(258deg);
-  }
-
-  80% {
-    transform: perspective(400px) rotateY(276deg);
-  }
-
-  85% {
-    transform: perspective(400px) rotateY(294deg);
-  }
-
-  90% {
-    transform: perspective(400px) rotateY(312deg);
-  }
-
-  95% {
-    transform: perspective(400px) rotateY(330deg);
+  51% {
+    transform: perspective(400px) rotateY(360deg);
   }
 
   100% {
