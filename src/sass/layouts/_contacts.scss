@@ -72,8 +72,10 @@
   padding-bottom: 43px;
   padding-left: 20px;
   margin: 0 auto;
-  &:not(:last-child) {
-    margin-bottom: 20px;
+  @media screen and(max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
   }
 
   @media screen and(min-width: 480px) {
@@ -99,7 +101,11 @@
     margin-right: 15px;
   }
 }
-
+.contacts-list__contacts-item {
+  @media screen and(max-width: 767px) {
+    margin-bottom: 54px;
+  }
+}
 .contacts-item__category {
   display: flex;
   max-width: 80px;
