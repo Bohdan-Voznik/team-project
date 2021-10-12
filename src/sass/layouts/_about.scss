@@ -1,6 +1,21 @@
 .about {
     background: var(--secondary-bg-color);
 
+    padding-top: 125px;
+    padding-bottom: 20px;
+
+     @media screen and (min-width:768px) {
+       padding-top: 130px;
+       padding-bottom: 33px;
+    }
+
+
+     @media screen and (min-width:1200px) {
+       padding-top: 125px;
+       padding-bottom: 20px;
+
+    }
+
     // Фон для смартфона и десктопа
     @media screen and (max-width: 767px){
 
@@ -46,23 +61,6 @@
 
     }
 
-}
-
-.container--about {
-    padding-top: 125px;
-    padding-bottom: 20px;
-
-     @media screen and (min-width:768px) {
-       padding-top: 130px;
-       padding-bottom: 33px;
-    }
-
-
-     @media screen and (min-width:1200px) {
-       padding-top: 125px;
-       padding-bottom: 20px;
-
-    }
 }
 
 .about__pre-title {
@@ -160,14 +158,14 @@
 
 .about__text {
 
-    margin-top: 46px;
+    padding-top: 46px;
 
     @media screen and (min-width:768px) and (max-width:1279px) {
         width: 340px;
     }
 
     @media screen and (min-width:1200px) {
-        margin-top: 51px;
+        padding-top: 51px;
         width: 463px;
     }
 }
