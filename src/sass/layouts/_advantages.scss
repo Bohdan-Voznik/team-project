@@ -1,19 +1,20 @@
 .advantages {
   background-color: var(--secondary-bg-color);
-}
-.advantages-list {
   padding-top: 20px;
   padding-bottom: 45px;
-
   @media (min-width: 768px) {
     padding-top: 33px;
     padding-bottom: 70px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
   }
   @media (min-width: 1200px) {
     padding-top: 20px;
+  }
+}
+.advantages-list {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
