@@ -1091,6 +1091,11 @@ button {
   }
 }
 
+.product {
+  padding-bottom: 98px;
+  padding-top: 121px;
+}
+
 .product__text {
   font-family: Titan One;
   font-weight: 400;
@@ -1098,7 +1103,6 @@ button {
   line-height: 1.16;
   text-align: center;
   color: var(--secondary-title-color);
-  padding-top: 121px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1225,9 +1229,9 @@ button {
 .product-item {
   width: 280px;
   height: 485px;
-  background: var(--secondary-title-color);
   border-radius: 24px;
-  margin-bottom: 16px;
+  padding-bottom: 41px;
+  margin: auto;
   margin-top: 144px;
 }
 
@@ -1255,6 +1259,10 @@ button {
   .product-item:not(:last-child) {
     margin-right: 30px;
   }
+}
+
+.product-item__color-box {
+  background: var(--secondary-title-color);
 }
 
 .product-item__color {
