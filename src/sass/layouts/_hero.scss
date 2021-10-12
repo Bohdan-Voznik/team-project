@@ -21,7 +21,7 @@
     background-image: url(../images/hero/sotasty-tablet@1x.png),
       url(../images/hero/milk-tablet@1x.png), url(../images/hero/ellipse-nodesktop@1x.png);
     background-repeat: no-repeat;
-    background-position: bottom left 566px, bottom 28px left 34px, bottom 46px left 307px;
+    background-position: bottom left 566px, bottom 28px left 34px, bottom 46px left 284px;
     background-size: 168px auto, 124px auto, 324px auto;
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -36,7 +36,7 @@
     background-image: url(../images/hero/sotasty-desktop@1x.png),
       url(../images/hero/milk-desktop@1x.png), url(../images/hero/ellipse-desktop@1x.png);
     background-repeat: no-repeat;
-    background-position: bottom left 878px, bottom 45px left 77px, bottom 75px left 475px;
+    background-position: bottom left 878px, bottom 45px left 77px, bottom 75px left 444px;
     background-size: 293px auto, 188px auto, 538px auto;
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -130,7 +130,7 @@
 }
 
 .rotate-y {
-  animation: rotateY 15s infinite linear 3000ms;
+  animation: rotateY 10s infinite linear 3000ms;
 }
 
 @keyframes rotateY {
