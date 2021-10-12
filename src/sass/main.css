@@ -774,7 +774,9 @@ button {
   .hero-bg {
     background-image: url(../images/hero/sotasty-tablet@1x.png), url(../images/hero/milk-tablet@1x.png), url(../images/hero/ellipse-nodesktop@1x.png);
     background-repeat: no-repeat;
-    background-position: bottom left 566px, bottom 28px left 34px, bottom 46px left 307px;
+
+    background-position: bottom left 566px, bottom 28px left 34px, bottom 46px left 284px;
+
     background-size: 168px auto, 124px auto, 324px auto;
   }
 }
@@ -789,7 +791,9 @@ button {
   .hero-bg {
     background-image: url(../images/hero/sotasty-desktop@1x.png), url(../images/hero/milk-desktop@1x.png), url(../images/hero/ellipse-desktop@1x.png);
     background-repeat: no-repeat;
-    background-position: bottom left 878px, bottom 45px left 77px, bottom 75px left 475px;
+
+    background-position: bottom left 878px, bottom 45px left 77px, bottom 75px left 444px;
+
     background-size: 293px auto, 188px auto, 538px auto;
   }
 }
@@ -916,8 +920,9 @@ button {
 }
 
 .rotate-y {
-  -webkit-animation: rotateY 15s infinite linear 3000ms;
-          animation: rotateY 15s infinite linear 3000ms;
+
+  -webkit-animation: rotateY 10s infinite linear 3000ms;
+          animation: rotateY 10s infinite linear 3000ms;
 }
 
 @-webkit-keyframes rotateY {
@@ -1091,10 +1096,10 @@ button {
   }
 }
 
+
 .product {
   padding-bottom: 98px;
   padding-top: 121px;
-}
 
 .product__text {
   font-family: Titan One;
@@ -1103,7 +1108,7 @@ button {
   line-height: 1.16;
   text-align: center;
   color: var(--secondary-title-color);
-}
+
 
 @media screen and (min-width: 768px) {
   .product__text {
@@ -1158,21 +1163,24 @@ button {
   left: 0;
   font-family: Titan One;
   font-weight: 400;
-  font-size: 18px;
+
+  font-size: 15px;
   line-height: 1.15;
   text-align: center;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
+  padding-bottom: 30px;
   border-radius: 24px;
   color: var(--white-text-color);
   background-color: var(--grey-text-color);
-  padding: 30px 25px 25px 30px;
-  overflow: visible;
+  padding: 25px 25px 25px 25px;
+  overflow: auto;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 500ms linear;
+  transition: -webkit-transform 500ms linear;
+  transition: transform 500ms linear;
+  transition: transform 500ms linear, -webkit-transform 500ms linear;
+
 }
 
 .product-button:hover .overlay-text {
@@ -1203,9 +1211,13 @@ button {
 
 @media screen and (min-width: 768px) {
   .product-list {
+
+    
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1229,9 +1241,14 @@ button {
 .product-item {
   width: 280px;
   height: 485px;
+
   border-radius: 24px;
   padding-bottom: 41px;
   margin: auto;
+  background: var(--secondary-title-color);
+  border-radius: 24px;
+  margin-bottom: 16px;
+
   margin-top: 144px;
 }
 
@@ -1260,6 +1277,7 @@ button {
     margin-right: 30px;
   }
 }
+
 
 .product-item__color-box {
   background: var(--secondary-title-color);
@@ -1510,6 +1528,24 @@ button {
 
 .about {
   background: var(--secondary-bg-color);
+
+  padding-top: 125px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    padding-top: 130px;
+    padding-bottom: 33px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    padding-top: 125px;
+    padding-bottom: 20px;
+  }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -1548,6 +1584,7 @@ button {
   }
 }
 
+
 .container--about {
   padding-top: 125px;
   padding-bottom: 20px;
@@ -1566,6 +1603,7 @@ button {
     padding-bottom: 20px;
   }
 }
+
 
 .about__pre-title {
   font-family: 'Titan One';
@@ -1673,8 +1711,9 @@ button {
   }
 }
 
-.about__text {
+
   margin-top: 46px;
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -1685,9 +1724,9 @@ button {
 
 @media screen and (min-width: 1200px) {
   .about__text {
+
     margin-top: 51px;
-    width: 463px;
-  }
+
 }
 
 .about__main-text {
@@ -1813,6 +1852,7 @@ button {
   height: 100vh;
   z-index: 3;
   background: rgba(0, 0, 0, 0.2);
+
 }
 
 .about-backdrop.is-hidden {
