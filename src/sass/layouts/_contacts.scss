@@ -195,3 +195,23 @@
     flex-direction: row;
   }
 }
+.main-button--red {
+  margin: auto;
+  margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    margin-right: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 15px;
+  }
+}
+.contacts-set__main-button {
+  margin: auto;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+}
