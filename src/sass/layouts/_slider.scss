@@ -1,64 +1,84 @@
+.wrapper {
+  height: 350px;
+  position: relative;
+}
+
 .slider {
-  width: 900px;
-  height: 200px;
-  margin: auto;
+  height: inherit;
+  overflow: hidden;
+  position: relative;
+  width: 700px;
 }
 
-.item {
-  align-items: center;
-  text-align: center;
-}
-.slideText {
+.slides {
+  height: inherit;
+  opacity: 0;
   position: absolute;
-  color: #fff;
-  font-size: 35px;
-  text-align: center;
-  // /* Выравнивание текста по горизонтали и по вертикали*/
-  // /* left: 50%;
-  // top: 50%;
-  // transform: translate(-50%, -50%); */
-  // /* Тень*/
-  text-shadow: 1px 1px 1px #000, 0 0 1em #000;
-}
-/* Кружочки */
-.slider-dots {
-  text-align: center;
-}
-.slider-dots_item {
-  cursor: pointer;
-  height: 12px;
-  width: 12px;
-  margin: 0 2px;
-  background-color: #ddd;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.active,
-.slider-dots_item:hover {
-  background-color: #aaa;
-}
-/* Анимация слайдов */
-.slider .item {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+  width: 700px;
+  z-index: 0;
+  transform: scale(1.5);
+  transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s;
 }
 
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+// .slide1 {
+//   background-image: url(http://habrastorage.org/files/3f2/628/bd5/3f2628bd58c8452db516195cb0c9bfc9.jpg);
+// }
+// .slide2 {
+//   background-image: url(http://habrastorage.org/files/3e1/95d/c7f/3e195dc7f5a64469807f49a14f97ba0e.jpg);
+// }
+// .slide3 {
+//   background-image: url(http://habrastorage.org/files/663/6b1/d4f/6636b1d4f8e643d29eab8c192fc1cea3.jpg);
+// }
+// .slide4 {
+//   background-image: url(http://habrastorage.org/files/e59/424/c04/e59424c046be4dab897d84ab015c87ea.jpg);
+// }
+// .slide5 {
+//   background-image: url(http://habrastorage.org/files/53c/ff6/c1c/53cff6c1caf842368c70b8ef892d8402.jpg);
+// }
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3 {
+  opacity: 1;
+  z-index: 1;
+  transform: scale(1);
 }
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+
+.wrapper > input {
+  display: none;
+}
+
+.wrapper .controls {
+  left: 50%;
+  margin-left: -98px;
+  position: absolute;
+}
+
+.wrapper label {
+  cursor: pointer;
+  display: inline-block;
+  height: 8px;
+  margin: 25px 12px 0 16px;
+  position: relative;
+  width: 8px;
+  border-radius: 50%;
+}
+
+.wrapper label:hover,
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3) {
+  background: #ddd;
+}
+
+.wrapper label:after {
+  border: 2px solid #ddd;
+  content: ' ';
+  display: block;
+  height: 12px;
+  left: -4px;
+  position: absolute;
+  top: -4px;
+  width: 12px;
+  border-radius: 50%;
 }

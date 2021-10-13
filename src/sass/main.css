@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --white-text-color: #ffffff;
   --black-text-color: #000000;
@@ -2204,6 +2203,10 @@ body.modal-open {
   text-align: center;
 }
 
+.customer-review__wraper {
+  position: relative;
+}
+
 @media screen and (min-width: 480px) {
   .customer-review__wraper {
     width: 439px;
@@ -2904,73 +2907,78 @@ body.modal-open {
   }
 }
 
+.wrapper {
+  height: 350px;
+  position: relative;
+}
+
 .slider {
-  width: 900px;
-  height: 200px;
-  margin: auto;
+  height: inherit;
+  overflow: hidden;
+  position: relative;
+  width: 700px;
 }
 
-.item {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
-.slideText {
+.slides {
+  height: inherit;
+  opacity: 0;
   position: absolute;
-  color: #fff;
-  font-size: 35px;
-  text-align: center;
-  text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+  width: 700px;
+  z-index: 0;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: opacity ease-in-out 0.5s, -webkit-transform ease-in-out 0.5s;
+  transition: opacity ease-in-out 0.5s, -webkit-transform ease-in-out 0.5s;
+  transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s;
+  transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s, -webkit-transform ease-in-out 0.5s;
 }
 
-/* Кружочки */
-.slider-dots {
-  text-align: center;
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3 {
+  opacity: 1;
+  z-index: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
-.slider-dots_item {
+.wrapper > input {
+  display: none;
+}
+
+.wrapper .controls {
+  left: 50%;
+  margin-left: -98px;
+  position: absolute;
+}
+
+.wrapper label {
   cursor: pointer;
-  height: 12px;
-  width: 12px;
-  margin: 0 2px;
-  background-color: #ddd;
-  border-radius: 50%;
   display: inline-block;
-  -webkit-transition: background-color 0.6s ease;
-  transition: background-color 0.6s ease;
+  height: 8px;
+  margin: 25px 12px 0 16px;
+  position: relative;
+  width: 8px;
+  border-radius: 50%;
 }
 
-.active,
-.slider-dots_item:hover {
-  background-color: #aaa;
+.wrapper label:hover,
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3) {
+  background: #ddd;
 }
 
-/* Анимация слайдов */
-.slider .item {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+.wrapper label:after {
+  border: 2px solid #ddd;
+  content: ' ';
+  display: block;
+  height: 12px;
+  left: -4px;
+  position: absolute;
+  top: -4px;
+  width: 12px;
+  border-radius: 50%;
 }
 
 .footer {

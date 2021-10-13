@@ -13,6 +13,7 @@
 }
 
 .customer-review__wraper {
+  position: relative;
   @media screen and (min-width: 480px) {
     width: 439px;
     margin: 0 auto;
