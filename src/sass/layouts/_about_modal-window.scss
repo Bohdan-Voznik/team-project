@@ -22,7 +22,7 @@
 .about-modal {
 
     min-width: 300px;
-    height: 500px;
+    height: 75vh;
     overflow-y: scroll;
 
     padding-top: 40px;
@@ -45,17 +45,17 @@
 
     @media screen and (min-width:480px) {
         width: 450px;
-        height: 700px;
+        
     }
 
     @media screen and (min-width:768px) {
         width: 500px;
-        height: 600px;
+        
     }
 
     @media screen and (min-width:1200px) {
         width: 650px;
-        height: 800px;
+        
     }
 
 }
@@ -64,8 +64,8 @@
 
 .about-modal__close-button {
     position: absolute;
-    right: 15px;
-    top: 15px;
+    right: 25px;
+    top: 25px;
     height: 30px;
     width: 30px;
     border-radius: 50%;
