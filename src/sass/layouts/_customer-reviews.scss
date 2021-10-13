@@ -1,0 +1,122 @@
+.customer-review {
+  padding-top: 40px;
+  padding-bottom: 43px;
+}
+.customer-review__img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 29px;
+  border-radius: 50%;
+}
+.customer-review__item {
+  text-align: center;
+}
+
+.customer-review__wraper {
+  @media screen and (min-width: 480px) {
+    width: 439px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 768px) {
+    width: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: auto;
+    margin-left: 63px;
+    margin-right: 63px;
+  }
+}
+
+.customer-review__text-bg {
+  position: relative;
+  padding-top: 28px;
+  padding-bottom: 20px;
+  background-color: #fafafa;
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    transform: translateX(-50%);
+    width: 32px;
+    height: 4px;
+    background-image: url('../images/customer-reviews/customer-reviews-dots.png');
+    @media screen and (min-width: 768px) {
+      bottom: -23px;
+    }
+    @media screen and (min-width: 1200px) {
+      bottom: -15px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 29px;
+    padding-bottom: 29px;
+    padding-left: 34px;
+    padding-right: 42px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 50px;
+    padding-right: 54px;
+  }
+}
+
+.customer-review__text {
+  width: 180px;
+  margin: 0 auto;
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+  color: #000000;
+  padding-top: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-image: url('../images/customer-reviews/bg.png');
+  background-repeat: no-repeat;
+  @media screen and (min-width: 768px) {
+    width: auto;
+    padding-top: 17px;
+    padding-left: 42px;
+    padding-right: 42px;
+    font-size: 14px;
+    line-height: 2.16;
+    background-image: url('../images/customer-reviews/bg-tablet.png');
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.86;
+    padding-top: 15px;
+    padding-left: 36px;
+    padding-right: 36px;
+    background-image: url('../images/customer-reviews/bg-desc.png');
+  }
+}
+.customer-review__title {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+  color: #000000;
+  margin-top: 52px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 41px;
+    margin-top: 35px;
+    font-size: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 34px;
+    font-size: 20px;
+  }
+}
+
+.lol {
+  margin: 0 auto;
+  width: 73px;
+  height: 12px;
+  background-color: red;
+}
